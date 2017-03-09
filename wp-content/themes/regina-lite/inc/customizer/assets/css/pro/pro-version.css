@@ -1,0 +1,203 @@
+/*
+==================================================
+= Background color for control description
+==================================================
+*/
+#customize-controls .description {
+	background-color: #fff;
+	border: 1px solid #08cae8;
+	border-radius: 3px;
+	font-size: 12px !important;
+	padding: 10px;
+	font-style: normal;
+}
+
+/*
+==================================================
+= Get the Pro version button
+==================================================
+*/
+.pro-box, .text-center { text-align: center; }
+.pro-version-text { margin-bottom: 15px; }
+.regina-lite-upgrade { margin: 10px 5px !important; }
+
+/*
+==================================================
+= Upsell links in main panel
+==================================================
+*/
+
+.accordion-section.upsell-links { border-bottom: 0; }
+
+.upsell-link {
+	display: block;
+	padding: 10px 0 10px 10px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	border: none;
+	font-size: 14px;
+	margin: 10px auto;
+}
+
+.upsell-link:before {
+	content: '\f132';
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Dashicons';
+	position: relative;
+	top: 3px;
+	margin-right: 8px;
+}
+
+.upsell-link:after {
+	content: '\f345';
+	font-family: 'Dashicons';
+	color: #fff;
+	position: relative;
+	top: 2px;
+	right: -110px;
+}
+
+.upsell-link {
+	background-color: #e14d43;
+	color: #fff;
+	border: 1px solid #e14d43;
+}
+
+.upsell-link:hover {
+	color: #e14d43;
+	border: 1px solid #e14d43;
+	background-color: transparent;
+}
+
+.upsell-link:hover:before,
+.upsell-link:hover:after {
+	color: #e14d43;
+}
+
+/*
+==================================================
+= Last panel always has 15px margin bottom
+==================================================
+*/
+
+li#accordion-panel-widgets.accordion-section.control-section.control-panel.control-panel-widgets { margin-bottom: 15px; }
+
+#accordion-section-regina_lite_order_section h3.accordion-section-title,
+#accordion-section-regina_lite_maps_section h3.accordion-section-title,
+#accordion-section-regina_lite_custom_icons h3.accordion-section-title,
+#accordion-section-regina_lite_color_controls h3.accordion-section-title {
+	padding-right: 15px !important;
+}
+
+#accordion-section-regina_lite_maps_section .accordion-section-title:before,
+#accordion-section-regina_lite_premium_support .accordion-section-title:before,
+#accordion-section-regina_lite_order_section .accordion-section-title:before,
+#accordion-section-regina_lite_color_controls .accordion-section-title:before,
+#accordion-section-regina_lite_custom_icons .accordion-section-title:before,
+#accordion-section-regina_lite_dropdown_menus .accordion-section-title:before {
+	content: '\f160';
+	font-family: 'Dashicons';
+	position: relative;
+	color: #e14d43;
+	margin-right: 8px;
+}
+
+#accordion-section-regina_lite_maps_section .accordion-section-title:after,
+#accordion-section-regina_lite_premium_support .accordion-section-title:after,
+#accordion-section-regina_lite_order_section .accordion-section-title:after,
+#accordion-section-regina_lite_color_controls .accordion-section-title:after,
+#accordion-section-regina_lite_custom_icons .accordion-section-title:after,
+#accordion-section-regina_lite_dropdown_menus .accordion-section-title:after {
+	content: 'PRO';
+	color: #fff;
+	background-color: #e14d43;
+	font-size: 14px;
+	padding: 5px 10px;
+	font: menu;
+	position: relative;
+	top: -2px;
+	right: 0;
+}
+
+#accordion-section-regina_lite_maps_section .accordion-section-title:hover:after,
+#accordion-section-regina_lite_premium_support .accordion-section-title:hover:after,
+#accordion-section-regina_lite_order_section .accordion-section-title:hover:after,
+#accordion-section-regina_lite_color_controls .accordion-section-title:hover:after,
+#accordion-section-regina_lite_custom_icons .accordion-section-title:hover:after,
+#accordion-section-regina_lite_dropdown_menus .accordion-section-title:hover:after {
+	color: #e14d43 !important;
+	border: 1px solid #e14d43;
+	background-color: transparent;
+}
+
+/*
+==================================================
+= Panel Icons
+==================================================
+*/
+
+.accordion-section h3::before {
+	font-family: 'Dashicons';
+	content: '\f109';
+	margin-right: 8px;
+	color: #555;
+	float: left;
+	margin-top: 1px;
+}
+
+#accordion-section-regina_lite_news_general h3:before {
+	content: '\f130';
+}
+
+#accordion-section-regina_lite_speak_general h3:before {
+	content: '\f125';
+}
+
+#accordion-panel-regina_lite_testimonials_panel h3:before {
+	content: '\f122';
+}
+
+#accordion-panel-regina_lite_ourteam_panel h3:before {
+	content: '\f110';
+}
+
+#accordion-panel-regina_lite_panel_general h3:before {
+	content: '\f111';
+}
+
+#accordion-panel-regina_lite_features_panel h3:before {
+	content: '\f319';
+}
+
+#accordion-section-title_tagline h3:before {
+	content: '\f115';
+}
+
+#accordion-section-header_image h3:before {
+	content: '\f128';
+}
+
+#accordion-section-colors h3:before {
+	content: '\f042';
+}
+
+#accordion-section-background_image h3:before {
+	content: '\f03e';
+}
+
+#accordion-panel-nav_menus h3:before {
+	content: '\f333';
+}
+
+#accordion-panel-widgets h3:before {
+	content: '\f100';
+}
+
+#accordion-section-static_front_page h3:before {
+	content: '\f123';
+}
+
+#accordion-section-blog_options h3:before {
+	content: '\f040';
+}
