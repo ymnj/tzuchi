@@ -61,11 +61,10 @@ if ( ! class_exists( 'MTL_Contact_Bar_Output' ) ) {
 		public function contact_bar_output() {
 			echo '<header id="sub-header">';
 			echo '<div class="container">';
-			echo '<div class="row">';
 
 
 			if ( $this->facebook_url || $this->twitter_url || $this->linkedin_url || $this->youtube_url ) {
-				echo '<div class="col-sm-4 col-xs-12 text-left-lg text-left-md text-left-sm text-center-xs">';
+				echo '<div class="text-left-lg text-left-md text-left-sm text-center-xs social-links-container">';
 				echo '<ul class="social-link-list">';
 
 				if ( $this->facebook_url ) {
@@ -89,15 +88,23 @@ if ( ! class_exists( 'MTL_Contact_Bar_Output' ) ) {
 			}
 
 			if ( $this->phone_number || $this->email_addr || $this->show_search_in_header ) {
-				echo '<div class="col-sm-8 col-xs-12 text-center-xs">';
+				echo '<div class="text-center-xs contact-bar">';
 
 				// change mark-up based on IF show_search_in_header = 0/1
 
-				if ( $this->show_search_in_header == 1 ) {
-					echo '<div class="col-sm-7">';
-				} else {
-					echo '<div class="col-sm-12">';
+				if ( $this->show_search_in_header ) {
+					echo '<div class="pull-right">';
+					echo '<div class="nav-menu-search">';
+					echo '<form role="search" method="get" class="search-form" action = "'.esc_url( home_url() ).'" > ';
+					echo '<input type = "search" class="search-field" id = "search" placeholder = "Search..." name = "s" />';
+					echo '<button class="icon">' . __( 'Go', 'regina-lite' ) . '</button>';
+					echo '</form>';
+					echo '</div>';
+
+					echo '</div><!--/.col-sm-5-->';
 				}
+
+				echo '<div class="pull-right">';
 
 				if ( $this->phone_number ) {
 					echo '<p><span class="nc-icon-glyph tech_mobile-button"></span>' . esc_html( $this->phone_number ) . '</p>';
@@ -107,23 +114,10 @@ if ( ! class_exists( 'MTL_Contact_Bar_Output' ) ) {
 				}
 				echo '</div><!--/.col-sm-7-->';
 
-				if ( $this->show_search_in_header ) {
-					echo '<div class="col-sm-5">';
-					echo '<div class="nav-menu-search">';
-					echo '<form role="search" method="get" class="search-form" action = "<?php echo esc_url( home_url() ); ?>" > ';
-					echo '<input type = "search" class="search-field" id = "search" placeholder = "Search..." name = "s" />';
-					echo '<button class="icon">' . __( 'Go', 'regina-lite' ) . '</button>';
-					echo '</form>';
-					echo '</div>';
-
-					echo '</div><!--/.col-sm-5-->';
-				}
-
 				echo '</div ><!--/.col-sm-8-->';
 			}
 
 
-			echo '</div ><! --/.row -->';
 			echo '</div ><! --/.container -->';
 			echo '</header ><! --/#sub-header.visible-lg-->';
 		}

@@ -174,10 +174,11 @@ if( !class_exists( 'MTL_Related_Posts_Output' ) ) {
                         $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'regina-lite-related-posts' );
                         $enable_related_title_blog_posts = get_theme_mod( 'regina_lite_enable_related_title_blog_posts', 1 );
                         $enable_related_date_blog_posts = get_theme_mod( 'regina_lite_enable_related_date_blog_posts', 1 );
+                        $url = get_permalink();
                         echo '<div class="item clearfix">';
                             echo '<div class="col-sm-12">';
                                 echo '<div class="post">';
-                                    echo '<a href="#" title="New medical researches has been found">';
+                                    echo '<a href="'.$url.'" title="New medical researches has been found">';
                                         if( $featured_image ) {
                                             echo '<img src="'. esc_url( $featured_image[0] ) .'" data-original="'. esc_url( $featured_image[0] ) .'" alt="'. esc_attr( get_the_title() ) .'" class="lazy">';
                                         }

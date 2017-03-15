@@ -396,3 +396,95 @@ $wp_customize->add_control( $prefix.'_ourteam_teammember4_buttonurl',
         'settings'      => $prefix.'_ourteam_teammember4_buttonurl',
     )
 );
+
+/***********************************************/
+/************ TEAM MEMBER 5 SECTION ************/
+/***********************************************/
+$wp_customize->add_section( $prefix.'_ourteam_teammember5' ,
+    array(
+        'title'       => esc_html__( 'Team Member #5', 'regina-lite' ),
+        //'description' => esc_html__( 'Team Member #5 Section description.', 'regina-lite' ),
+        'panel'       => $panel_id
+    )
+);
+
+/* Image */
+$wp_customize->add_setting( $prefix . '_ourteam_teammember1_image', array( 'default' => get_template_directory_uri() . '/layout/images/team/team-member-1.jpg', 'sanitize_callback' => 'esc_url' ) );
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $prefix . '_ourteam_teammember1_image', array(
+    'label'    => __( 'Image:', 'regina-lite' ),
+    'section'  => $prefix.'_ourteam_teammember1',
+    'settings' => $prefix . '_ourteam_teammember1_image',
+) ) );
+
+/* Name */
+$wp_customize->add_setting($prefix.'_ourteam_teammember5_name',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => __( 'Dr. Mick Harold', 'regina-lite' )
+    )
+);
+$wp_customize->add_control(
+    $prefix.'_ourteam_teammember5_name',
+    array(
+        'label'         => esc_html__('Name:', 'regina-lite'),
+        'section'       => $prefix.'_ourteam_teammember5',
+    )
+);
+
+/* Position */
+$wp_customize->add_setting($prefix.'_ourteam_teammember5_position',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => __( 'Cardiac Clinic, Primary Healthcare', 'regina-lite' )
+    )
+);
+$wp_customize->add_control(
+    $prefix.'_ourteam_teammember5_position',
+    array(
+        'label'         => esc_html__('Position:', 'regina-lite'),
+        'section'       => $prefix.'_ourteam_teammember5',
+    )
+);
+
+/* Description */
+$wp_customize->add_setting($prefix.'_ourteam_teammember5_description',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => __( 'Dr. Mick Harold was born and raised in Texas, USA. He received a Bachelor of Science degree in Chemistry from the University of Houston and a...', 'regina-lite' )
+    )
+);
+$wp_customize->add_control(
+    $prefix.'_ourteam_teammember5_description',
+    array(
+        'label'         => esc_html__('Description:', 'regina-lite'),
+        'section'       => $prefix.'_ourteam_teammember5',
+        'type'          => 'textarea'
+    )
+);
+
+/* Button URL */
+$wp_customize->add_setting( $prefix.'_ourteam_teammember5_buttonurl',
+    array(
+        'sanitize_callback' => 'esc_url',
+        'default'           => esc_url('#')
+    )
+);
+$wp_customize->add_control( $prefix.'_ourteam_teammember5_buttonurl',
+    array(
+        'label'         => esc_html__( 'Button URL:', 'regina-lite' ),
+        'section'       => $prefix.'_ourteam_teammember5',
+        'settings'      => $prefix.'_ourteam_teammember5_buttonurl',
+    )
+);
+
+
+
+
+
+
+
+
+
+
+
+

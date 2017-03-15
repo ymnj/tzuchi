@@ -37,6 +37,7 @@
 	border: none;
 	font-size: 14px;
 	margin: 10px auto;
+	text-decoration: none;
 }
 
 .upsell-link:before {
@@ -55,7 +56,7 @@
 	color: #fff;
 	position: relative;
 	top: 2px;
-	right: -110px;
+	right: -98px;
 }
 
 .upsell-link {
@@ -68,6 +69,7 @@
 	color: #e14d43;
 	border: 1px solid #e14d43;
 	background-color: transparent;
+	text-decoration: none;
 }
 
 .upsell-link:hover:before,
@@ -112,7 +114,7 @@ li#accordion-panel-widgets.accordion-section.control-section.control-panel.contr
 	content: 'PRO';
 	color: #fff;
 	background-color: #e14d43;
-	font-size: 14px;
+	font-size: 14px !important;
 	padding: 5px 10px;
 	font: menu;
 	position: relative;
