@@ -26,20 +26,20 @@
               </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a href="#about">About</a>
-                  </li>
-                  <li>
-                      <a href="#services">Services</a>
-                  </li>
-                  <li>
-                      <a href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+          <?php
+            wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'navbar',
+                'menu_class'        => 'nav navbar-nav navbar-right',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker())
+            );
+        ?>
       </div>
       <!-- /.container -->
   </nav>
+

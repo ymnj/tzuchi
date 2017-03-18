@@ -1,6 +1,6 @@
 <?php 
 
-	/* Template Name: Doctor Page */ 
+	/* Template Name: Doctors Page */ 
 
 	get_header();
 ?>
