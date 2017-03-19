@@ -12,6 +12,9 @@ Tags: grid-layout, footer-widgets, blog, education, e-commerce
 
 This theme, like WordPress, is licensed under the GPL.
 */
+body {
+  background-color: #eee; }
+
 /*************** NAVIGATION ***************/
 .navbar {
   height: 120px;
@@ -27,5 +30,17 @@ This theme, like WordPress, is licensed under the GPL.
 /*************** CAROUSEL ***************/
 .doctors-page-container {
   background-color: red; }
+
+/*************** DOCTORS SECTION ***************/
+.team-section {
+  padding: 0;
+  background-color: #eee; }
+  .team-section .intro-header {
+    text-align: center; }
+  .team-section .team-member img {
+    width: 100%; }
+  .team-section .team-member .member-box .description {
+    text-align: center;
+    background-color: lightblue; }
 
 /*# sourceMappingURL=style.css.map */
