@@ -15,6 +15,10 @@ This theme, like WordPress, is licensed under the GPL.
 
 body {
 	background-color: #eee;
+
+	h1, p, li, ul {
+		margin: 0;
+	}
 }
 
 /*************** NAVIGATION ***************/
@@ -44,26 +48,36 @@ body {
 	background-color: red;
 }
 
-/*************** DOCTORS SECTION ***************/
+/*************** TEAM MEMBERS SECTION ***************/
 
 .team-section {
 	padding: 0;
 	background-color: #eee;
 
 	.intro-header {
-		text-align: center;
+		margin: 10% 0 5%;
+		p {
+			margin-top: 5%;
+		}
 	}
 
 	.team-member {
 
 		img {
 			width: 100%;
+			display: block;
 		}
 
 		.member-box {
+			background-color: red;
+			padding: 30px 0;
 			.description {
-				text-align: center;
-				background-color: lightblue;
+				.team-member-name {
+					font-size: 22px;
+				}
+				.team-member-training {
+					margin: 5% 0;
+				}
 			}
 		}
 	}

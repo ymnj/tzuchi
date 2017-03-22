@@ -19,18 +19,16 @@
 			echo get_template_directory_uri() . "/layout/images/member-default.jpg";
 		}
 	};
-	
 
 	$team_general_title = get_theme_mod('team_members_general_title', 'This is a default title');
 	$team_general_description = get_theme_mod('team_members_general_description', 'This is a default description text');
 	$names = first_four($mods, 'name');
-	$descriptions = first_four($mods, 'training');
+	$training = first_four($mods, 'training');
 	$images = first_four($mods, 'image');
-
 ?>	
 
 <div class="container team-section">
-	<div class="intro-header">
+	<div class="intro-header text-center">
 		<h1><?php echo $team_general_title; ?></h1>
 
 		<p><?php echo $team_general_description; ?></p>
@@ -41,16 +39,16 @@
 		<div class="team-member col-lg-3 col-sm-6">
 			<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
 			<div class="member-box">
-				<div class="description">
-					<h1 class="team-member-name"><?php echo $names["team_members_number" . $i . "_name"]; ?></h1>
-					<p class="team-member-des"><?php   ?></p>
+				<div class="description text-center">
+					<h1 class="team-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
+					<p class="team-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
 				</div>
 			</div>
 		</div>
 		<?php endfor ?>
 	</div> <!-- END ROW -->
 	
-	<p class="text-center">
+	<p class="read-more text-center">
 		Read More
 	</p>
 
