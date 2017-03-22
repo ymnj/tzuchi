@@ -27,6 +27,7 @@ body {
 	margin-bottom: 0;
 	background-color: #fff;
 
+
 	.navbar-nav>li>a {
 		margin-top: 35px;
 	}
@@ -40,6 +41,9 @@ body {
 	}
 }
 
+.navbar-default {
+	border: none;
+}
 
 /*************** CAROUSEL ***************/
 
@@ -69,7 +73,7 @@ body {
 		}
 
 		.member-box {
-			background-color: red;
+			background-color: #fff;
 			padding: 30px 0;
 			.description {
 				.team-member-name {

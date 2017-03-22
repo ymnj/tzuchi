@@ -2,13 +2,28 @@
 
 /******************* STYLESHEET *******************/
 
-function mytheme_enqueue_style(){
+function main_styles(){
 	wp_register_style( 'main_styles', get_template_directory_uri() . '/style.css');
 	wp_enqueue_style( 'main_styles' );
 }
 
-add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
+function customize_css() {
+?>
+	<style>
+    body, .team-section {
+        background-color : <?php echo get_theme_mod('site_color'); ?>
+    }
+		
+		.navbar {
+			background-color : <?php echo get_theme_mod('nav_color'); ?>
+		}
 
+	</style>
+<?php
+}
+
+add_action( 'wp_enqueue_scripts', 'main_styles' );
+add_action( 'wp_head', 'customize_css' );
 
 /******************* MENU *******************/
 
@@ -34,19 +49,6 @@ require_once get_template_directory() . '/inc/customizer/panels/team_members.php
 
 
 add_action( 'customize_register', 'create_customizer');
-
-
-
-function customize_css()
-{
-?>
-   <style type="text/css">
-       body { color: <?php echo get_theme_mod('site_color', '#000'); ?>; }
-   </style>
-<?php
-}
-
-add_action( 'wp_head', 'customize_css');
 
 
 ?>

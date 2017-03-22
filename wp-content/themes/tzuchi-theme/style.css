@@ -29,6 +29,9 @@ body {
     .navbar .navbar-brand img {
       max-height: 100px; }
 
+.navbar-default {
+  border: none; }
+
 /*************** CAROUSEL ***************/
 .doctors-page-container {
   background-color: red; }
@@ -45,7 +48,7 @@ body {
     width: 100%;
     display: block; }
   .team-section .team-member .member-box {
-    background-color: red;
+    background-color: #fff;
     padding: 30px 0; }
     .team-section .team-member .member-box .description .team-member-name {
       font-size: 22px; }
