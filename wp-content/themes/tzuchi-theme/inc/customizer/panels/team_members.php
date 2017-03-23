@@ -18,7 +18,7 @@
 
 	// Title
 	$wp_customize->add_section('team_members_general', array(
-		'title' => esc_html__('General', 'tzuchi-theme' ),
+		'title' => esc_html__('Front Page', 'tzuchi-theme' ),
 		'priority' => 10,
 		'panel' => $panel_id
 	));
@@ -42,9 +42,40 @@
 		'section' =>	'team_members_general'
 	));
 
+	/***********************************************/
+	/************ MEET OUR TEAM SECTION ******************/
+	/***********************************************/
+
+	// Title
+	$wp_customize->add_section('meet_team', array(
+		'title' => esc_html__('Meet our Team', 'tzuchi-theme' ),
+		'priority' => 10,
+		'panel' => $panel_id
+	));
+
+	$wp_customize->add_setting('meet_team_header', array(
+		'default' => __('Meet the TCMC Team', 'tzuchi-theme')
+	));
+
+	$wp_customize->add_control('meet_team_header', array(
+		'label'    => __( esc_html__('Header'), 'tzuchi-theme' ),
+		'section'  => 'meet_team'
+	));
+
+	//Description
+	$wp_customize->add_setting('meet_team_paragraph', array(
+		'default' => __('TZU CHI Medical Center is comprised of talented and experienced Chinese medical practitioners.', 'tzuchi-theme')
+	));
+
+	$wp_customize->add_control('meet_team_paragraph', array(
+		'label'   => __( esc_html__('Paragraph:'), 'tzuchi-theme'),
+		'section' =>	'meet_team'
+	));
+
+
 
 	/**********************************************************/
-	/****************** TEAM MEMEBER 1 *******************/
+	/****************** TEAM MEMBER 1 *******************/
 	/**********************************************************/
 
 	$wp_customize->add_section('team_members_number1', array(
@@ -104,7 +135,7 @@
 
 
 /**********************************************************/
-/****************** TEAM MEMEBER 2 *******************/
+/****************** TEAM MEMBER 2 *******************/
 /**********************************************************/	
 
 $wp_customize->add_section('team_members_number2', array(
@@ -163,7 +194,7 @@ $wp_customize->add_control(
  );
 
 /**********************************************************/
-/****************** TEAM MEMEBER 3 *******************/
+/****************** TEAM MEMBER 3 *******************/
 /**********************************************************/
 
 $wp_customize->add_section('team_members_number3', array(
@@ -222,7 +253,7 @@ $wp_customize->add_control(
 );
 
 /**********************************************************/
-/****************** TEAM MEMEBER 4 *******************/
+/****************** TEAM MEMBER 4 *******************/
 /**********************************************************/	
 
 $wp_customize->add_section('team_members_number4', array(
@@ -281,7 +312,7 @@ $wp_customize->add_control(
 );
 
 /**********************************************************/
-/****************** TEAM MEMEBER 5 *******************/
+/****************** TEAM MEMBER 5 *******************/
 /**********************************************************/	
 
 $wp_customize->add_section('team_members_number5', array(
@@ -341,7 +372,7 @@ $wp_customize->add_control(
 
 
 /**********************************************************/
-/****************** TEAM MEMEBER 6 *******************/
+/****************** TEAM MEMBER 6 *******************/
 /**********************************************************/	
 
 $wp_customize->add_section('team_members_number6', array(
@@ -395,6 +426,65 @@ $wp_customize->add_control(
          'label'      => __( 'Image', 'tzuchi-theme' ),
          'section'    => 'team_members_number6',
          'settings'   => 'team_members_number6_image'
+       )
+   )
+);
+
+/**********************************************************/
+/****************** TEAM MEMBER 7 *******************/
+/**********************************************************/
+
+$wp_customize->add_section('team_members_number7', array(
+	'title' 	 => __("Team Memember #7", 'tzuchi-theme'),
+	'priority' => 20,
+	'description' => __('Team member #7 information', 'tzuchi-theme'),
+	'panel'  => $panel_id
+));
+
+//Name
+$wp_customize->add_setting('team_members_number7_name', array(
+	'default'   => 'Name'
+));
+
+$wp_customize->add_control('team_members_number7_name', array(
+	'label'   => __( esc_html__('Name'), 'tzuchi-theme'),
+	'section' => 'team_members_number7'
+));
+
+//Training
+$wp_customize->add_setting('team_members_number7_training', array(
+	'default' => "Training qualifications"
+));
+
+$wp_customize->add_control('team_members_number7_training', array(
+	'label'   => __( esc_html__('Training'), 'tzuchi-theme'),
+	'section' => 'team_members_number7'
+));
+
+//Description
+$wp_customize->add_setting('team_members_number7_description', array(
+	'default' => 'Description'
+));
+
+$wp_customize->add_control('team_members_number7_description', array(
+	'label'   => __( esc_html__('Description'), 'tzuchi-theme'),
+	'type'		=> 'textarea',
+	'section' => 'team_members_number7'
+));
+
+//Image
+$wp_customize->add_setting('team_members_number7_image', array(
+	'default' => get_template_directory_uri() . '/layout/images/member-default.jpg'
+));
+
+$wp_customize->add_control(
+   new WP_Customize_Image_Control(
+       $wp_customize,
+       'team_members_number3_image',
+       array(
+         'label'      => __( 'Image', 'tzuchi-theme' ),
+         'section'    => 'team_members_number3',
+         'settings'   => 'team_members_number3_image'
        )
    )
 );

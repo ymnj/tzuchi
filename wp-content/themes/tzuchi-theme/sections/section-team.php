@@ -36,20 +36,20 @@
 
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
-		<div class="team-member col-lg-3 col-sm-6">
+		<div class="section-member col-lg-3 col-sm-6">
 			<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
 			<div class="member-box">
 				<div class="description text-center">
-					<h1 class="team-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
-					<p class="team-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
+					<h1 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
+					<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
 				</div>
 			</div>
 		</div>
-		<?php endfor ?>
+		<?php endfor; ?>
 	</div> <!-- END ROW -->
-	
+
 	<p class="read-more text-center">
-		Read More
+		<a href="<?php echo get_page_link(7); ?>">Meet our team</a>
 	</p>
 
 </div>

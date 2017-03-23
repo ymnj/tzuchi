@@ -33,26 +33,49 @@ body {
   border: none; }
 
 /*************** CAROUSEL ***************/
-.doctors-page-container {
-  background-color: red; }
-
-/*************** TEAM MEMBERS SECTION ***************/
+/*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {
-  padding: 0;
+  padding: 5% 0;
   background-color: #eee; }
   .team-section .intro-header {
-    margin: 10% 0 5%; }
+    margin-bottom: 5%; }
     .team-section .intro-header p {
       margin-top: 5%; }
-  .team-section .team-member img {
+  .team-section .section-member img {
     width: 100%;
     display: block; }
-  .team-section .team-member .member-box {
+  .team-section .section-member .member-box {
     background-color: #fff;
     padding: 30px 0; }
-    .team-section .team-member .member-box .description .team-member-name {
-      font-size: 22px; }
-    .team-section .team-member .member-box .description .team-member-training {
+    .team-section .section-member .member-box .description .section-member-name {
+      font-size: 20px; }
+    .team-section .section-member .member-box .description .section-member-training {
       margin: 5% 0; }
+  .team-section .read-more {
+    margin-top: 5%; }
+
+/*************** FULL TEAM MEMBERS SECTION ***************/
+.team-page-container {
+  background-color: #fff;
+  padding: 0; }
+  .team-page-container .team-header {
+    margin: 5% 0; }
+  .team-page-container .members-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; }
+    .team-page-container .members-grid-wrapper .single-member {
+      width: 19%;
+      margin-bottom: 5%; }
+      .team-page-container .members-grid-wrapper .single-member img {
+        width: 100%;
+        padding: 10px;
+        border: 5px solid #eee; }
+      .team-page-container .members-grid-wrapper .single-member .member-name {
+        font-size: 1em; }
+      .team-page-container .members-grid-wrapper .single-member .member-training {
+        white-space: nowrap;
+        overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

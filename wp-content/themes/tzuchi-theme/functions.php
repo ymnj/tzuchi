@@ -7,23 +7,10 @@ function main_styles(){
 	wp_enqueue_style( 'main_styles' );
 }
 
-function customize_css() {
-?>
-	<style>
-    body, .team-section {
-        background-color : <?php echo get_theme_mod('site_color'); ?>
-    }
-		
-		.navbar {
-			background-color : <?php echo get_theme_mod('nav_color'); ?>
-		}
-
-	</style>
-<?php
-}
-
 add_action( 'wp_enqueue_scripts', 'main_styles' );
-add_action( 'wp_head', 'customize_css' );
+
+// Customizer styles
+require_once get_template_directory() . '/inc/customizer/customizer_styles.php';
 
 /******************* MENU *******************/
 
