@@ -30,9 +30,11 @@ add_action( 'init', 'register_my_menu' );
 function create_customizer($wp_customize){
 
 // General Panel
-require_once get_template_directory() . '/inc/customizer/panels/general.php';
+require_once get_template_directory() . '/inc/customizer/panels/general_panel_cust.php';
 // Team Members Panel
-require_once get_template_directory() . '/inc/customizer/panels/team_members.php';
+require_once get_template_directory() . '/inc/customizer/panels/team_members_panel_cust.php';
+
+require_once get_template_directory() . '/inc/customizer/panels/footer_panel_cust.php';
 }
 
 

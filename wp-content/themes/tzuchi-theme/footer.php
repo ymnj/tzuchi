@@ -4,6 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="footer-nav-col col-lg-3">
+					<h2 class="footer-title">Menu</h2>
 					<?php wp_nav_menu( array(
 							'menu'              => 'Navigation Menu',
               'theme_location'    => 'navigation-menu',
@@ -11,9 +12,15 @@
               'container'         => 'ul'
 					)); ?>
 				</div>
-				<div class="clinic-address-col col-lg-3">sdsd</div>
-				<div class="contact-col col-lg-3">sdsd</div>
-				<div class="office-address-col col-lg-3">sdsd</div>
+				<div class="clinic-address-col col-lg-3">
+					<h2 class="footer-title">Menu</h2>
+				</div>
+				<div class="contact-col col-lg-3">
+					<h2 class="footer-title">Menu</h2>
+				</div>
+				<div class="office-address-col col-lg-3">
+					<h2 class="footer-title">Menu</h2>
+				</div>
 			</div>
 		</div>
 	</footer>
