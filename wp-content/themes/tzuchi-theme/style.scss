@@ -16,8 +16,15 @@ This theme, like WordPress, is licensed under the GPL.
 body {
 	background-color: #eee;
 
+
+	//General site wide
 	h1, p, li, ul {
 		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style-type: none;
 	}
 }
 
@@ -121,6 +128,26 @@ body {
 			}
 		}
 	}
-
 }
 
+/*************** FOOTER ***************/
+
+footer {
+	background-color: salmon;
+
+	.footer-nav-col {
+		background-color: white;
+	}
+
+	.clinic-address-col {
+		background-color: yellow;
+	}
+
+	.contact-col {	
+		background-color: steelblue;
+	}
+
+	.office-address-col {
+		background-color: pink;
+	}
+}

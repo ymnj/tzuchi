@@ -15,7 +15,10 @@ This theme, like WordPress, is licensed under the GPL.
 body {
   background-color: #eee; }
   body h1, body p, body li, body ul {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
+  body li {
+    list-style-type: none; }
 
 /*************** NAVIGATION ***************/
 .navbar {
@@ -77,5 +80,17 @@ body {
       .team-page-container .members-grid-wrapper .single-member .member-training {
         white-space: nowrap;
         overflow: hidden; }
+
+/*************** FOOTER ***************/
+footer {
+  background-color: salmon; }
+  footer .footer-nav-col {
+    background-color: white; }
+  footer .clinic-address-col {
+    background-color: yellow; }
+  footer .contact-col {
+    background-color: steelblue; }
+  footer .office-address-col {
+    background-color: pink; }
 
 /*# sourceMappingURL=style.css.map */

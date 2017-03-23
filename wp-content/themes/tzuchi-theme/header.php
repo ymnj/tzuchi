@@ -28,8 +28,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <?php
             wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
+                'menu'              => 'Main Navigation',
+                'theme_location'    => 'navigation-menu',
                 'depth'             => 2,
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',
