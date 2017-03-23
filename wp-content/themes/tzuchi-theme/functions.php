@@ -17,13 +17,30 @@ require_once get_template_directory() . '/inc/customizer/customizer_styles.php';
 // Register Custom Navigation Walker
 require_once('wp-bootstrap-navwalker.php');
 
-
-
 function register_my_menu() {
   register_nav_menu('navigation-menu',__( 'Navigation Menu' ));
   // register_nav_menu('footer-nav-menu',__( 'Footer Nav' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+/******************* WIDGET *******************/
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Bottom Sidebar',
+		'id'            => 'footer_bottom',
+		'before_widget' => '<div class="footer-nav-col col-lg-3">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="footer-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 
 /******************* CUSTOMIZER *******************/

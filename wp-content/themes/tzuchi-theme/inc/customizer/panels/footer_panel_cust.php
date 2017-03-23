@@ -15,7 +15,9 @@
 	));
 
 
-	// COLUMN ONE
+					/***********************************************/
+					/****************** PANEL ONE ***************/
+					/***********************************************/
 
 	$wp_customize->add_section('footer_col_one', array(
 		'title' => esc_html__('First Column', 'tzuchi-theme' ),
@@ -33,7 +35,9 @@
 		'section'  => 'footer_col_one'
 	));
 
-	// COLUMN TWO
+					/***********************************************/
+					/****************** PANEL TWO ***************/
+					/***********************************************/
 
 	$wp_customize->add_section('footer_col_two', array(
 		'title' => esc_html__('Second Column', 'tzuchi-theme' ),
@@ -42,6 +46,7 @@
 		'panel' => $panel_id
 	));
 
+	//HEADING TITLE
 	$wp_customize->add_setting('heading_title_2', array(
 		'default' => __('Clinic Address', 'tzuchi-theme')
 	));
@@ -51,7 +56,19 @@
 		'section'  => 'footer_col_two'
 	));
 
-	//COLUMN THREE
+	//CLINIC ONE
+	$wp_customize->add_setting('link_1', array(
+		'default' => __('Raven Song Community Health Centre', 'tzuchi-theme')
+	));
+
+	$wp_customize->add_control('link_1', array(
+		'label'    => __( esc_html__('Link #1'), 'tzuchi-theme' ),
+		'section'  => 'footer_col_two'
+	));
+
+					/***********************************************/
+					/****************** PANEL THREE ***************/
+					/***********************************************/
 
 	$wp_customize->add_section('footer_col_three', array(
 		'title' => esc_html__('Third Column', 'tzuchi-theme' ),
@@ -69,7 +86,9 @@
 		'section'  => 'footer_col_three'
 	));
 
-	// //COLUMN FOUR
+					/***********************************************/
+					/****************** PANEL FOUR ***************/
+					/***********************************************/
 
 	$wp_customize->add_section('footer_col_four', array(
 		'title' => esc_html__('Fourth Column', 'tzuchi-theme' ),

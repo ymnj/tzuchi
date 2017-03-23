@@ -14,7 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 */
 body {
   background-color: #eee; }
-  body h1, body p, body li, body ul {
+  body h1, body h2, body h3, body p, body li, body ul {
     margin: 0;
     padding: 0; }
   body li {
