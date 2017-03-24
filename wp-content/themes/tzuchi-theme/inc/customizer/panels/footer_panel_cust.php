@@ -15,6 +15,47 @@
 	));
 
 
+				/***********************************************/
+				/****************** COLORS ***************/
+				/***********************************************/
+
+				// Background Color
+				$wp_customize->add_section('footer_background_color', array(
+					'title' => esc_html__('Background Color', 'tzuchi-theme' ),
+					'priority' => 9,
+					'description' => 'Edit Footer Background Color',
+					'panel' => $panel_id
+				));
+
+				$wp_customize->add_setting('footer_background_color', array(
+					'default' => __('#eee', 'tzuchi-theme')
+				));
+
+				$wp_customize->add_control('footer_background_color', array(
+					'label'    => __( esc_html__('Background Color'), 'tzuchi-theme' ),
+					'section'    => 'footer_background_color'
+				));
+
+				// Text Color
+				$wp_customize->add_section('footer_text_color', array(
+					'title' => esc_html__('Text Color', 'tzuchi-theme' ),
+					'priority' => 10,
+					'description' => 'Edit Footer Text Color',
+					'panel' => $panel_id
+				));
+
+				$wp_customize->add_setting('footer_text_color', array(
+					'default' => __('#000', 'tzuchi-theme')
+				));
+
+				$wp_customize->add_control('footer_text_color', array(
+					'label'    => __( esc_html__('Text Color'), 'tzuchi-theme' ),
+					'section'    => 'footer_text_color'
+				));
+
+
+
+
 					/***********************************************/
 					/****************** PANEL ONE ***************/
 					/***********************************************/

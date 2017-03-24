@@ -133,21 +133,43 @@ body {
 /*************** FOOTER ***************/
 
 footer {
-	background-color: salmon;
+	background-color: darkgrey;
+
+	.container {
+		padding: 0;
+	}
+
+	.footer-title {
+		text-transform: uppercase;
+		margin: 30px 0 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid black;
+		font-size: 14px;
+	}
 
 	.footer-nav-col {
-		background-color: #fff;
+		a {
+			color: #000;
+		}
+		li {
+			margin-bottom: 8px;
+		}
 	}
 
-	.clinic-address-col {
-		background-color: yellow;
+	//Menu Column
+	.footer-nav-col:nth-child(1) {
+		background-color: darkgrey;
 	}
-
-	.contact-col {	
-		background-color: steelblue;
+	//Clinic Column
+	.footer-nav-col:nth-child(2){
+		background-color: darkgrey;
 	}
-
-	.office-address-col {
-		background-color: pink;
+	//Contact Column
+	.footer-nav-col:nth-child(3) {	
+		background-color: darkgrey;
+	}
+	//Office Column
+	.footer-nav-col:nth-child(4) {
+		background-color: darkgrey;
 	}
 }
