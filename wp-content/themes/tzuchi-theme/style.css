@@ -59,10 +59,11 @@ body {
 
 /*************** FULL TEAM MEMBERS SECTION ***************/
 .team-page-container {
-  background-color: #fff;
   padding: 0; }
   .team-page-container .team-header {
     margin: 5% 0; }
+    .team-page-container .team-header h1 {
+      margin-bottom: 20px; }
   .team-page-container .members-grid-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -70,39 +71,40 @@ body {
     align-items: flex-end; }
     .team-page-container .members-grid-wrapper .single-member {
       width: 19%;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      padding: 10px; }
       .team-page-container .members-grid-wrapper .single-member img {
-        width: 100%;
-        padding: 10px;
-        border: 5px solid #eee; }
+        width: 100%; }
       .team-page-container .members-grid-wrapper .single-member .member-name {
-        font-size: 1em; }
+        font-size: 1em;
+        padding: 15px; }
       .team-page-container .members-grid-wrapper .single-member .member-training {
+        font-size: 0.9em;
         white-space: nowrap;
         overflow: hidden; }
 
 /*************** FOOTER ***************/
-footer {
-  background-color: darkgrey; }
-  footer .container {
-    padding: 0; }
-  footer .footer-title {
+#footer {
+  background-color: #2d3435;
+  color: #fff; }
+  #footer .container {
+    padding: 30px 0; }
+  #footer .footer-title {
     text-transform: uppercase;
-    margin: 30px 0 15px;
+    margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     font-size: 14px; }
-  footer .footer-nav-col a {
-    color: #000; }
-  footer .footer-nav-col li {
-    margin-bottom: 8px; }
-  footer .footer-nav-col:nth-child(1) {
-    background-color: darkgrey; }
-  footer .footer-nav-col:nth-child(2) {
-    background-color: darkgrey; }
-  footer .footer-nav-col:nth-child(3) {
-    background-color: darkgrey; }
-  footer .footer-nav-col:nth-child(4) {
-    background-color: darkgrey; }
+  #footer .footer-nav-col {
+    background-color: #2d3435;
+    letter-spacing: 0.5px; }
+    #footer .footer-nav-col li {
+      margin-bottom: 8px;
+      font-size: 0.9em; }
+
+#sub-footer {
+  background-color: #404546;
+  color: grey;
+  padding: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */

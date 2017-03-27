@@ -55,7 +55,6 @@ body {
 /*************** CAROUSEL ***************/
 
 
-
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 
 .team-section {
@@ -97,11 +96,14 @@ body {
 /*************** FULL TEAM MEMBERS SECTION ***************/
 
 .team-page-container {
-	background-color: #fff;
 	padding: 0;
 	
 	.team-header {
 		margin: 5% 0;
+
+		h1 {
+			margin-bottom: 20px;
+		}
 	}
 
 	.members-grid-wrapper{
@@ -112,19 +114,21 @@ body {
 		.single-member {
 			width: 19%;
 			margin-bottom: 5%;
+			padding: 10px; 
+			// border: 1px solid darkgrey;
 			img {
 				width: 100%;
-				padding: 10px; 
-				border: 5px solid #eee;
 			}
 
 			.member-name {
 				font-size: 1em;
+				padding: 15px;
 			}
 
 			.member-training {
-				 white-space: nowrap;
-  				overflow: hidden;
+				font-size: 0.9em;
+				white-space: nowrap;
+  			overflow: hidden;
 			}
 		}
 	}
@@ -132,44 +136,51 @@ body {
 
 /*************** FOOTER ***************/
 
-footer {
-	background-color: darkgrey;
+#footer {
+	background-color: #2d3435;
+	color: #fff;
 
 	.container {
-		padding: 0;
+		padding: 30px 0;;
 	}
 
 	.footer-title {
 		text-transform: uppercase;
-		margin: 30px 0 15px;
+		margin-bottom: 15px;
 		padding-bottom: 15px;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid grey;
 		font-size: 14px;
 	}
 
 	.footer-nav-col {
-		a {
-			color: #000;
-		}
+		background-color: #2d3435;
+		letter-spacing: 0.5px;
 		li {
 			margin-bottom: 8px;
+			font-size: 0.9em;
 		}
 	}
 
 	//Menu Column
 	.footer-nav-col:nth-child(1) {
-		background-color: darkgrey;
+		
 	}
 	//Clinic Column
 	.footer-nav-col:nth-child(2){
-		background-color: darkgrey;
+		
 	}
 	//Contact Column
 	.footer-nav-col:nth-child(3) {	
-		background-color: darkgrey;
+		
 	}
 	//Office Column
 	.footer-nav-col:nth-child(4) {
-		background-color: darkgrey;
+		
 	}
+}
+
+#sub-footer {
+	background-color: #404546;
+	color: grey;
+	padding: 20px 0;
 }
