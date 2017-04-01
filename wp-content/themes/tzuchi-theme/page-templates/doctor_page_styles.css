@@ -1,0 +1,78 @@
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #eee;
+  position: relative; }
+  body h1, body h2, body h3, body p, body li, body ul {
+    margin: 0;
+    padding: 0; }
+  body li {
+    list-style-type: none; }
+
+/*************** NAVIGATION ***************/
+.navbar {
+  height: 120px;
+  margin-bottom: 0;
+  background-color: #fff; }
+  .navbar .navbar-nav > li > a {
+    margin-top: 35px; }
+  .navbar .navbar-brand {
+    padding: 10px 0; }
+    .navbar .navbar-brand img {
+      max-height: 100px; }
+
+.navbar-default {
+  border: none; }
+  .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover,
+  .navbar-default .navbar-nav .active a:focus {
+    background-color: transparent;
+    color: #2d3435;
+    border-bottom: 1px solid red;
+    padding: 15px 0;
+    margin: 35px 15px 0; }
+
+/*************** INDIVIDUAL DOCTOR PAGE ***************/
+.doctors-page-container {
+  margin-top: 5%; }
+  .doctors-page-container .doctor-profile-image img {
+    width: 100%; }
+  .doctors-page-container .doctor-name-header {
+    margin-bottom: 20px; }
+  .doctors-page-container .doctor-bio p {
+    font-size: 1.2em;
+    margin: 15px 0; }
+
+/*************** FOOTER ***************/
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  background-color: #2d3435;
+  color: #fff; }
+  #footer .container {
+    padding: 30px 0; }
+  #footer .footer-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+    font-size: 14px; }
+  #footer .footer-nav-col {
+    background-color: #2d3435;
+    letter-spacing: 0.5px; }
+    #footer .footer-nav-col li {
+      margin-bottom: 8px;
+      font-size: 0.9em; }
+
+#sub-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #404546;
+  color: grey;
+  padding: 20px 0; }
+
+/*# sourceMappingURL=doctor_page_styles.css.map */

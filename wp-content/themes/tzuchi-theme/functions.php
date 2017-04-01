@@ -1,10 +1,20 @@
 <?php 
 
+
+add_theme_support( 'post-thumbnails' );
+
 /******************* STYLESHEET *******************/
 
 function main_styles(){
-	wp_register_style( 'main_styles', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style( 'main_styles' );
+	global $post;
+	
+	if ( is_page() && $post->post_parent > 0 ) { 
+		wp_register_style( 'doctor_page_styles', get_template_directory_uri() . '/page-templates/doctor_page_styles.css');
+		wp_enqueue_style( 'doctor_page_styles' );
+	} else {
+		wp_register_style( 'main_styles', get_template_directory_uri() . '/style.css');
+		wp_enqueue_style( 'main_styles' );
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'main_styles' );

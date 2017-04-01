@@ -16,7 +16,6 @@ This theme, like WordPress, is licensed under the GPL.
 body {
 	background-color: #eee;
 
-
 	//General site wide
 	h1, h2, h3, p, li, ul {
 		margin: 0;
@@ -50,6 +49,14 @@ body {
 
 .navbar-default {
 	border: none;
+	.navbar-nav .active a, .navbar-nav .active a:hover,
+	.navbar-nav .active a:focus {
+		background-color: transparent;
+		color: #2d3435;
+		border-bottom: 1px solid red;
+		padding: 15px 0;
+		margin: 35px 15px 0;
+	}
 }
 
 /*************** CAROUSEL ***************/
@@ -133,6 +140,38 @@ body {
 		}
 	}
 }
+
+
+/*************** INDIVIDUAL DOCTOR PAGE ***************/
+
+.doctors-page-container {
+	display: flex;
+	flex-direction: column;
+	background-color: steelblue;
+	
+	.doctor-wrap {
+		flex: 1;
+	}
+	
+	.test {
+		flex: 1;
+	}
+	.doctor-profile-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.doctor-name-header {
+		margin-bottom: 20px;
+	}
+
+	.doctor-bio p {
+		font-size: 1.2em;
+		margin: 15px 0;
+	}
+}
+
 
 /*************** FOOTER ***************/
 
