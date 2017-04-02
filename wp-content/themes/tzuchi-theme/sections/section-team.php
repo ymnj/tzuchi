@@ -3,7 +3,7 @@
 
 	$mods = get_theme_mods();
 
-	//This function will take the mods array and return the first four elements with keys containing the search $term.
+	//This function will take the mods array and return the first four doctors with keys containing the search $term.
 	function first_four($arr, $term){
 		$filtered = array_filter($arr, function($k) use ($term){
 		return	strpos($k, $term);
@@ -25,7 +25,14 @@
 	$names = first_four($mods, 'name');
 	$training = first_four($mods, 'training');
 	$images = first_four($mods, 'image');
+	$links = first_four($mods, 'training')
 ?>	
+
+<pre>
+<?php 	
+echo get_theme_mod('team_members_number2_link');
+?>
+</pre>
 
 <div class="container team-section">
 	<div class="intro-header text-center">
@@ -37,7 +44,9 @@
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
 		<div class="section-member col-lg-3 col-sm-6">
-			<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
+			<a href="<?php ?>">
+				<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
+			</a>
 			<div class="member-box">
 				<div class="description text-center">
 					<h1 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>

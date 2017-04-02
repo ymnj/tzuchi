@@ -116,6 +116,19 @@
 		'section' => 'team_members_number1'
 	));
 
+	//Link
+	$wp_customize->add_setting('team_members_number1_link', array(
+		'capability'     => 'edit_theme_options',
+    'type'           => 'option'
+	));
+
+	$wp_customize->add_control('team_members_number1_link', array(
+		'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+		'setting' => 'team_members_number1_link',
+		'section' => 'team_members_number1',
+		'type' 		=> 'dropdown-pages',
+	));
+
 	//Image
 	$wp_customize->add_setting('team_members_number1_image', array(
 		'default' => get_template_directory_uri() . '/layout/images/member-default.jpg'
@@ -176,7 +189,20 @@ $wp_customize->add_control('team_members_number2_description', array(
 	'section' => 'team_members_number2'
 ));
 
-//Image
+//Link
+$wp_customize->add_setting('team_members_number2_link', array(
+	'capability'     => 'edit_theme_options',
+  'type'           => 'option',
+));
+
+$wp_customize->add_control('team_members_number2_link', array(
+	'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+	'setting' => 'team_members_number2_link',
+	'section' => 'team_members_number2',
+	'type' 		=> 'dropdown-pages',
+));
+
+//ImageTom
 $wp_customize->add_setting('team_members_number2_image', array(
 	'default' => get_template_directory_uri() . '/layout/images/member-default.jpg'
 ));
@@ -234,6 +260,19 @@ $wp_customize->add_control('team_members_number3_description', array(
 	'type'		=> 'textarea',
 	'section' => 'team_members_number3'
 ));
+
+//Link
+	$wp_customize->add_setting('team_members_number3_link', array(
+		'capability'     => 'edit_theme_options',
+    'type'           => 'option',
+	));
+
+	$wp_customize->add_control('team_members_number3_link', array(
+		'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+		'setting' => 'team_members_number3_link',
+		'section' => 'team_members_number3',
+		'type' 		=> 'dropdown-pages',
+	));
 
 //Image
 $wp_customize->add_setting('team_members_number3_image', array(
@@ -294,6 +333,19 @@ $wp_customize->add_control('team_members_number4_description', array(
 	'section' => 'team_members_number4'
 ));
 
+//Link
+$wp_customize->add_setting('team_members_number4_link', array(
+	'capability'     => 'edit_theme_options',
+  'type'           => 'option',
+));
+
+$wp_customize->add_control('team_members_number4_link', array(
+	'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+	'setting' => 'team_members_number4_link',
+	'section' => 'team_members_number4',
+	'type' 		=> 'dropdown-pages',
+));
+
 //Image
 $wp_customize->add_setting('team_members_number4_image', array(
 	'default' => get_template_directory_uri() . '/layout/images/member-default.jpg'
@@ -351,6 +403,19 @@ $wp_customize->add_control('team_members_number5_description', array(
 	'label'   => __( esc_html__('Description'), 'tzuchi-theme'),
 	'type'		=> 'textarea',
 	'section' => 'team_members_number5'
+));
+
+//Link
+$wp_customize->add_setting('team_members_number5_link', array(
+	'capability'     => 'edit_theme_options',
+  'type'           => 'option',
+));
+
+$wp_customize->add_control('team_members_number5_link', array(
+	'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+	'setting' => 'team_members_number5_link',
+	'section' => 'team_members_number5',
+	'type' 		=> 'dropdown-pages',
 ));
 
 //Image
@@ -413,6 +478,19 @@ $wp_customize->add_control('team_members_number6_description', array(
 	'section' => 'team_members_number6'
 ));
 
+//Link
+$wp_customize->add_setting('team_members_number6_link', array(
+	'capability'     => 'edit_theme_options',
+  'type'           => 'option',
+));
+
+$wp_customize->add_control('team_members_number6_link', array(
+	'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+	'setting' => 'team_members_number6_link',
+	'section' => 'team_members_number6',
+	'type' 		=> 'dropdown-pages',
+));
+
 //Image
 $wp_customize->add_setting('team_members_number6_image', array(
 	'default' => get_template_directory_uri() . '/layout/images/member-default.jpg'
@@ -470,6 +548,19 @@ $wp_customize->add_control('team_members_number7_description', array(
 	'label'   => __( esc_html__('Description'), 'tzuchi-theme'),
 	'type'		=> 'textarea',
 	'section' => 'team_members_number7'
+));
+
+//Link
+$wp_customize->add_setting('team_members_number7_link', array(
+	'capability'     => 'edit_theme_options',
+  'type'           => 'option',
+));
+
+$wp_customize->add_control('team_members_number7_link', array(
+	'label'   => __( esc_html__('Link'), 'tzuchi-theme'),
+	'setting' => 'team_members_number7_link',
+	'section' => 'team_members_number7',
+	'type' 		=> 'dropdown-pages',
 ));
 
 //Image
