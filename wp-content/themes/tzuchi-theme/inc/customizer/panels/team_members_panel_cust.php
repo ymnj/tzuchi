@@ -118,8 +118,7 @@
 
 	//Link
 	$wp_customize->add_setting('team_members_number1_link', array(
-		'capability'     => 'edit_theme_options',
-    'type'           => 'option'
+		'default' => ''
 	));
 
 	$wp_customize->add_control('team_members_number1_link', array(
@@ -191,8 +190,7 @@ $wp_customize->add_control('team_members_number2_description', array(
 
 //Link
 $wp_customize->add_setting('team_members_number2_link', array(
-	'capability'     => 'edit_theme_options',
-  'type'           => 'option',
+	'default' => ''
 ));
 
 $wp_customize->add_control('team_members_number2_link', array(
@@ -263,8 +261,7 @@ $wp_customize->add_control('team_members_number3_description', array(
 
 //Link
 	$wp_customize->add_setting('team_members_number3_link', array(
-		'capability'     => 'edit_theme_options',
-    'type'           => 'option',
+		'default' => ''
 	));
 
 	$wp_customize->add_control('team_members_number3_link', array(
@@ -335,8 +332,7 @@ $wp_customize->add_control('team_members_number4_description', array(
 
 //Link
 $wp_customize->add_setting('team_members_number4_link', array(
-	'capability'     => 'edit_theme_options',
-  'type'           => 'option',
+	'default' => ''
 ));
 
 $wp_customize->add_control('team_members_number4_link', array(
@@ -407,8 +403,7 @@ $wp_customize->add_control('team_members_number5_description', array(
 
 //Link
 $wp_customize->add_setting('team_members_number5_link', array(
-	'capability'     => 'edit_theme_options',
-  'type'           => 'option',
+	'default' => ''
 ));
 
 $wp_customize->add_control('team_members_number5_link', array(
@@ -480,8 +475,7 @@ $wp_customize->add_control('team_members_number6_description', array(
 
 //Link
 $wp_customize->add_setting('team_members_number6_link', array(
-	'capability'     => 'edit_theme_options',
-  'type'           => 'option',
+	'default' => ''
 ));
 
 $wp_customize->add_control('team_members_number6_link', array(
@@ -552,8 +546,7 @@ $wp_customize->add_control('team_members_number7_description', array(
 
 //Link
 $wp_customize->add_setting('team_members_number7_link', array(
-	'capability'     => 'edit_theme_options',
-  'type'           => 'option',
+	'default' => ''
 ));
 
 $wp_customize->add_control('team_members_number7_link', array(

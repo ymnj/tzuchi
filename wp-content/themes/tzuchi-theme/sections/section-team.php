@@ -30,7 +30,8 @@
 
 <pre>
 <?php 	
-echo get_theme_mod('team_members_number2_link');
+	$mods = get_theme_mods();
+	var_dump($mods)
 ?>
 </pre>
 

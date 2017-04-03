@@ -14,6 +14,15 @@
 				return $names;
 			}
 
+			//This function returns the member number of all valid members with a name.
+			function get_member_nums($arr){
+				$nums = array();
+				foreach($arr as $key => $value) {
+					$nums[] = filter_var($key, FILTER_SANITIZE_NUMBER_INT);
+				}
+				return $nums;
+			}
+
 			//This function returns all that have been set. ALLOW EMPTY STRING
 			function get_mod_term($arr, $term){
 				$training = array_filter($arr, function($key) use ($term){
@@ -33,6 +42,8 @@
 			$names = get_names($mods, 'name');
 			$training = get_mod_term($mods, 'training');
 			$images = get_mod_term($mods, 'image');
+			//$valid_members is an array of numbers created from VALID members that have a name. Use $valid_members to loop through and display valid member information.
+			$valid_members = get_member_nums($names);
 
 ?>
 
@@ -45,13 +56,15 @@
 		</div>
 
 		<div class="members-grid-wrapper">
-			<?php for ($i = 1; $i <= count($names); $i++): ?>
-			<div class="single-member text-center">
-				<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>" alt="">
-				<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h2>
-				<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
-			</div>
-			<?php endfor; ?>
+			<?php foreach ($valid_members as $key => $value): ?>
+				<div class="single-member text-center">
+					<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $value . "_link")) ?>"><div class="link-wrap">
+						<img src="<?php image_check($images["team_members_number" . $value . "_image"]); ?>" alt="">
+						<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $value . "_name", 'Default Name'); ?></h2>
+						<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $value .'_training', 'Test Trainings'); ?></p>
+						</div></a> <!-- LINK WRAP -->
+				</div>
+			<?php endforeach; ?>
 		</div>
 
 	
