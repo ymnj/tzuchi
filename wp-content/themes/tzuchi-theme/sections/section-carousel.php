@@ -9,13 +9,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="<?php bloginfo('template_directory'); ?>/layout/images/cropped-group.jpg" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_image_1') ?>" alt="...">
     </div>
     <div class="item">
-      <img src="<?php bloginfo('template_directory'); ?>/layout/images/cropped-group.jpg" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_image_2') ?>" alt="...">
     </div>
     <div class="item">
-      <img src="<?php bloginfo('template_directory'); ?>/layout/images/cropped-group.jpg" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_image_3') ?>" alt="...">
     </div>
   </div>
 

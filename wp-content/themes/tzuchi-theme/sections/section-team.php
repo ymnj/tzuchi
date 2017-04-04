@@ -40,12 +40,10 @@
 			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link")) ?>">
 				<div class="link-wrap">
 					<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
-					<div class="member-box">
-						<div class="description text-center">
-							<h1 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
+						<div class="member-box text-center">
+							<h2 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h2>
 							<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
 						</div>
-					</div>
 				</div>		<!-- END LINK WRAP -->
 			</a>
 		</div>

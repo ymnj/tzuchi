@@ -30,8 +30,9 @@ body {
 		list-style-type: none;
 	}
 
-	a {
+	a{
 		color: #fff;
+		
 	}
 
 }
@@ -50,6 +51,11 @@ body {
 .content-wrap {
 	flex: 1;
 	padding: 5% 0;
+
+	a {
+		text-decoration: none;
+	}
+
 }
 
 /*************** NAVIGATION ***************/
@@ -117,25 +123,45 @@ body {
 			width: 100%;
 			display: block;
 		}
-
-		.member-box {
-			background-color: #fff;
-			padding: 30px 0;
-			.description {
-				.section-member-name {
-					font-size: 20px;
-				}
-				.section-member-training {
-					margin: 5% 0;
-				}
-			}
-		}
+		
 	}
+
 	.read-more {
 		margin-top: 5%;
 	}
 }
 
+.link-wrap img {
+	border-top-right-radius:20px;
+	border-top-left-radius:20px;
+}
+
+.member-box {
+	background-color: #fff;
+	color: #000;
+	padding: 15px 0;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+
+	.section-member-name, .member-name {
+		font-size: 20px;
+		margin-bottom: 5%;
+	}	
+
+  .member-name {
+		font-size: 1em;
+	}
+
+	.member-training {
+		font-size: 0.9em;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+.read-more {
+	font-size: 1.5em;
+}
 /*************** FULL TEAM MEMBERS SECTION ***************/
 
 .team-page-container {
@@ -161,17 +187,6 @@ body {
 			// border: 1px solid darkgrey;
 			img {
 				width: 100%;
-			}
-
-			.member-name {
-				font-size: 1em;
-				padding: 15px;
-			}
-
-			.member-training {
-				font-size: 0.9em;
-				white-space: nowrap;
-  			overflow: hidden;
 			}
 		}
 	}

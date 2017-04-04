@@ -67,7 +67,10 @@ require_once get_template_directory() . '/inc/customizer/panels/general_panel_cu
 require_once get_template_directory() . '/inc/customizer/panels/team_members_panel_cust.php';
 
 require_once get_template_directory() . '/inc/customizer/panels/footer_panel_cust.php';
+
+require_once get_template_directory() . '/inc/customizer/panels/carousel_panel_cust.php';
 }
+
 
 
 add_action( 'customize_register', 'create_customizer');

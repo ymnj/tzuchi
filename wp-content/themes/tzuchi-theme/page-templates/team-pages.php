@@ -47,7 +47,6 @@
 
 ?>
 
-
 	<div class="container content-wrap team-page-container">
 
 		<div class="team-header text-center">
@@ -61,8 +60,10 @@
 					<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $value . "_link")) ?>">
 						<div class="link-wrap">
 							<img src="<?php image_check($images["team_members_number" . $value . "_image"]); ?>" alt="">
-							<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $value . "_name", 'Default Name'); ?></h2>
-							<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $value .'_training', 'Test Trainings'); ?></p>
+							<div class="member-box">
+								<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $value . "_name", 'Default Name'); ?></h2>
+								<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $value .'_training', 'Test Trainings'); ?></p>
+							</div>
 						</div> <!-- LINK WRAP -->
 					</a> 
 				</div>
