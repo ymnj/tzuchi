@@ -7,7 +7,7 @@
 
 ?>
 
-	<div class="container doctors-page-container">
+	<div class="container content-wrap doctors-page-container">
 		<?php 
 		if( have_posts() ):
 			while( have_posts() ): the_post(); ?>

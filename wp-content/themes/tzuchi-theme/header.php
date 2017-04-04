@@ -10,7 +10,8 @@
 </head>
 <body>
   
- <!-- Navigation -->
+  <div class="main-flex-wrap">
+  <!-- Navigation -->
   <nav class="navbar navbar-default topnav" role="navigation">
       <div class="container topnav">
           <!-- Brand and toggle get grouped for better mobile display -->

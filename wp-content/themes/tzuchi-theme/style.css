@@ -12,6 +12,9 @@ Tags: grid-layout, footer-widgets, blog, education, e-commerce
 
 This theme, like WordPress, is licensed under the GPL.
 */
+body, html {
+  height: 100vh; }
+
 body {
   background-color: #eee; }
   body h1, body h2, body h3, body p, body li, body ul {
@@ -19,6 +22,22 @@ body {
     padding: 0; }
   body li {
     list-style-type: none; }
+  body a {
+    color: #fff; }
+
+.main-flex-wrap {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.content-wrap {
+  flex: 1;
+  padding: 5% 0; }
 
 /*************** NAVIGATION ***************/
 .navbar {
@@ -43,10 +62,15 @@ body {
     margin: 35px 15px 0; }
 
 /*************** CAROUSEL ***************/
+/*************** DEFAULT PAGE ***************/
+.default-page-container {
+  min-height: 100%; }
+
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {
-  padding: 5% 0;
   background-color: #eee; }
+  .team-section a {
+    color: black; }
   .team-section .intro-header {
     margin-bottom: 5%; }
     .team-section .intro-header p {
@@ -93,8 +117,7 @@ body {
 /*************** INDIVIDUAL DOCTOR PAGE ***************/
 .doctors-page-container {
   display: flex;
-  flex-direction: column;
-  background-color: steelblue; }
+  flex-direction: column; }
   .doctors-page-container .doctor-wrap {
     flex: 1; }
   .doctors-page-container .test {

@@ -11,7 +11,7 @@
  */
 get_header(); ?>
 
-	<div class="container default-page-container">
+	<div class="container content-wrap default-page-container">
 		This is default page
 	</div>
 

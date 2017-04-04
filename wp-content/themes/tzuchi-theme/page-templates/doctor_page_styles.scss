@@ -1,133 +1,123 @@
+@import url("../style.css");
+// html, body {
+// 	height: 100%;
+// }
 
-html, body {
-	height: 100%;
-}
+// body {
+// 	background-color: #eee;
 
-body {
-	background-color: #eee;
-	position: relative;
+// 	//General site wide
+// 	h1, h2, h3, p, li, ul {
+// 		margin: 0;
+// 		padding: 0;
+// 	}
 
-	//General site wide
-	h1, h2, h3, p, li, ul {
-		margin: 0;
-		padding: 0;
-	}
+// 	li {
+// 		list-style-type: none;
+// 	}
+// }
 
-	li {
-		list-style-type: none;
-	}
-}
-
-/*************** NAVIGATION ***************/
-.navbar {
-	height: 120px;
-	margin-bottom: 0;
-	background-color: #fff;
-
-
-	.navbar-nav>li>a {
-		margin-top: 35px;
-	}
-
-	.navbar-brand {
-		padding: 10px 0;
-
-		img {
-			max-height: 100px;
-		}
-	}
-}
-
-.navbar-default {
-	border: none;
-	.navbar-nav .active a, .navbar-nav .active a:hover,
-	.navbar-nav .active a:focus {
-		background-color: transparent;
-		color: #2d3435;
-		border-bottom: 1px solid red;
-		padding: 15px 0;
-		margin: 35px 15px 0;
-	}
-}
+// /*************** NAVIGATION ***************/
+// .navbar {
+// 	height: 120px;
+// 	margin-bottom: 0;
+// 	background-color: #fff;
 
 
-/*************** INDIVIDUAL DOCTOR PAGE ***************/
+// 	.navbar-nav>li>a {
+// 		margin-top: 35px;
+// 	}
 
-.doctors-page-container {
-	margin-top: 5%;
+// 	.navbar-brand {
+// 		padding: 10px 0;
+
+// 		img {
+// 			max-height: 100px;
+// 		}
+// 	}
+// }
+
+// .navbar-default {
+// 	border: none;
+// 	.navbar-nav .active a, .navbar-nav .active a:hover,
+// 	.navbar-nav .active a:focus {
+// 		background-color: transparent;
+// 		color: #2d3435;
+// 		border-bottom: 1px solid red;
+// 		padding: 15px 0;
+// 		margin: 35px 15px 0;
+// 	}
+// }
+
+
+// /*************** INDIVIDUAL DOCTOR PAGE ***************/
+
+// .doctors-page-container {
 	
-	.doctor-profile-image {
-		img {
-			width: 100%;
-		}
-	}
+// 	.doctor-profile-image {
+// 		img {
+// 			width: 100%;
+// 		}
+// 	}
 	
-	.doctor-name-header {
-		margin-bottom: 20px;
-	}
+// 	.doctor-name-header {
+// 		margin-bottom: 20px;
+// 	}
 
-	.doctor-bio p {
-		font-size: 1.2em;
-		margin: 15px 0;
-	}
-}
+// 	.doctor-bio p {
+// 		font-size: 1.2em;
+// 		margin: 15px 0;
+// 	}
+// }
 
 
-/*************** FOOTER ***************/
+// /*************** FOOTER ***************/
 
-#footer {
-	position: absolute;
-	left: 0;
-	bottom: 40px;
-	width: 100%;
-	background-color: #2d3435;
-	color: #fff;
+// #footer {
+// 	background-color: #2d3435;
+// 	color: #fff;
 
-	.container {
-		padding: 30px 0;;
-	}
+// 	.container {
+// 		padding: 30px 0;;
+// 	}
 
-	.footer-title {
-		text-transform: uppercase;
-		margin-bottom: 15px;
-		padding-bottom: 15px;
-		border-bottom: 1px solid grey;
-		font-size: 14px;
-	}
+// 	.footer-title {
+// 		text-transform: uppercase;
+// 		margin-bottom: 15px;
+// 		padding-bottom: 15px;
+// 		border-bottom: 1px solid grey;
+// 		font-size: 14px;
+// 	}
 
-	.footer-nav-col {
-		background-color: #2d3435;
-		letter-spacing: 0.5px;
-		li {
-			margin-bottom: 8px;
-			font-size: 0.9em;
-		}
-	}
+// 	.footer-nav-col {
+// 		background-color: #2d3435;
+// 		letter-spacing: 0.5px;
+// 		li {
+// 			margin-bottom: 8px;
+// 			font-size: 0.9em;
+// 		}
+// 	}
 
-	//Menu Column
-	.footer-nav-col:nth-child(1) {
+// 	//Menu Column
+// 	.footer-nav-col:nth-child(1) {
 		
-	}
-	//Clinic Column
-	.footer-nav-col:nth-child(2){
+// 	}
+// 	//Clinic Column
+// 	.footer-nav-col:nth-child(2){
 		
-	}
-	//Contact Column
-	.footer-nav-col:nth-child(3) {	
+// 	}
+// 	//Contact Column
+// 	.footer-nav-col:nth-child(3) {	
 		
-	}
-	//Office Column
-	.footer-nav-col:nth-child(4) {
+// 	}
+// 	//Office Column
+// 	.footer-nav-col:nth-child(4) {
 		
-	}
-}
+// 	}
+// }
 
-#sub-footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: #404546;
-	color: grey;
-	padding: 20px 0;
-}
+// #sub-footer {
+// 	background-color: #404546;
+// 	color: grey;
+// 	padding: 20px 0;
+// }

@@ -28,32 +28,26 @@
 	$links = first_four($mods, 'training')
 ?>	
 
-<pre>
-<?php 	
-	$mods = get_theme_mods();
-	var_dump($mods)
-?>
-</pre>
-
-<div class="container team-section">
+<div class="container content-wrap team-section">
 	<div class="intro-header text-center">
 		<h1><?php echo $team_general_title; ?></h1>
 
 		<p><?php echo $team_general_description; ?></p>
 	</div>
-
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
 		<div class="section-member col-lg-3 col-sm-6">
-			<a href="<?php ?>">
-				<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
+			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link")) ?>">
+				<div class="link-wrap">
+					<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
+					<div class="member-box">
+						<div class="description text-center">
+							<h1 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
+							<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
+						</div>
+					</div>
+				</div>		<!-- END LINK WRAP -->
 			</a>
-			<div class="member-box">
-				<div class="description text-center">
-					<h1 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", 'Default Name'); ?></h1>
-					<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training', 'Test Trainings'); ?></p>
-				</div>
-			</div>
 		</div>
 		<?php endfor; ?>
 	</div> <!-- END ROW -->

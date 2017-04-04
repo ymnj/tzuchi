@@ -48,7 +48,7 @@
 ?>
 
 
-	<div class="container team-page-container">
+	<div class="container content-wrap team-page-container">
 
 		<div class="team-header text-center">
 			<h1><?php echo get_theme_mod('meet_team_header', 'This is a default header'); ?></h1>
@@ -58,11 +58,13 @@
 		<div class="members-grid-wrapper">
 			<?php foreach ($valid_members as $key => $value): ?>
 				<div class="single-member text-center">
-					<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $value . "_link")) ?>"><div class="link-wrap">
-						<img src="<?php image_check($images["team_members_number" . $value . "_image"]); ?>" alt="">
-						<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $value . "_name", 'Default Name'); ?></h2>
-						<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $value .'_training', 'Test Trainings'); ?></p>
-						</div></a> <!-- LINK WRAP -->
+					<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $value . "_link")) ?>">
+						<div class="link-wrap">
+							<img src="<?php image_check($images["team_members_number" . $value . "_image"]); ?>" alt="">
+							<h2 class="member-name"><?php echo get_theme_mod("team_members_number". $value . "_name", 'Default Name'); ?></h2>
+							<p class="member-training"><?php echo get_theme_mod('team_members_number' .  $value .'_training', 'Test Trainings'); ?></p>
+						</div> <!-- LINK WRAP -->
+					</a> 
 				</div>
 			<?php endforeach; ?>
 		</div>
