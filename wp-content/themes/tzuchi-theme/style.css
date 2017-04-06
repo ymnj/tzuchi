@@ -69,13 +69,11 @@ body {
 /*************** FRONT PAGE NEWS SECTION ***************/
 .news-section {
   background-color: #fff; }
-  .news-section .latest-post-wrap {
-    padding-left: 10%; }
-    .news-section .latest-post-wrap h1 {
-      display: inline;
-      font-size: 2em;
-      border-top: 5px solid #3D9970;
-      border-bottom: 2px solid #3D9970; }
+  .news-section h1, .news-section .services-sidebar-wrap h1 {
+    display: inline;
+    font-size: 2em;
+    border-top: 5px solid #3D9970;
+    border-bottom: 2px solid #3D9970; }
 
 .front-page-news .post-img, .single-post-wrap .post-img {
   margin: 20px 0; }
@@ -84,9 +82,11 @@ body {
 .front-page-news .post-content, .single-post-wrap .post-content {
   margin-top: 20px; }
 
-.news-sidebar-wrap {
-  padding-right: 10%;
-  background-color: #ffccd4; }
+.services-sidebar-wrap .services-flex-wrap {
+  margin-top: 20px;
+  display: flex; }
+.services-sidebar-wrap img {
+  width: 100%; }
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {

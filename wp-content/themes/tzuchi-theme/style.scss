@@ -102,14 +102,14 @@ body {
 	
 	.latest-post-wrap {
 	
-		padding-left: 10%;
+	//	padding-left: 10%;
+	}
 
-		h1 {
+	h1, .services-sidebar-wrap h1 {
 		display: inline;
 		font-size: 2em;
 		border-top: 5px solid #3D9970;
 		border-bottom: 2px solid #3D9970;
-		}
 	}
 }
 
@@ -129,9 +129,18 @@ body {
 }
 
 
-.news-sidebar-wrap {
-	padding-right: 10%;
-	background-color: #ffccd4;
+.services-sidebar-wrap {
+	//padding-right: 10%;
+	// background-color: #ffccd4;
+
+	.services-flex-wrap {
+		margin-top: 20px;
+		display: flex;
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
