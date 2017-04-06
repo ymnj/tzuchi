@@ -22,8 +22,6 @@ body {
     padding: 0; }
   body li {
     list-style-type: none; }
-  body a {
-    color: #fff; }
 
 .main-flex-wrap {
   min-height: 100%;
@@ -68,6 +66,28 @@ body {
 .default-page-container {
   min-height: 100%; }
 
+/*************** FRONT PAGE NEWS SECTION ***************/
+.news-section {
+  background-color: #fff; }
+  .news-section .latest-post-wrap {
+    padding-left: 10%; }
+    .news-section .latest-post-wrap h1 {
+      display: inline;
+      font-size: 2em;
+      border-top: 5px solid #3D9970;
+      border-bottom: 2px solid #3D9970; }
+
+.front-page-news .post-img, .single-post-wrap .post-img {
+  margin: 20px 0; }
+  .front-page-news .post-img img, .single-post-wrap .post-img img {
+    width: 100%; }
+.front-page-news .post-content, .single-post-wrap .post-content {
+  margin-top: 20px; }
+
+.news-sidebar-wrap {
+  padding-right: 10%;
+  background-color: #ffccd4; }
+
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {
   background-color: #eee; }
@@ -106,10 +126,7 @@ body {
 .read-more {
   font-size: 1.5em; }
 
-/*************** NEWS PAGE ***************/
-.news-page-container {
-  background-color: red; }
-
+/*************** SINGLE POST ***************/
 /*************** FULL TEAM MEMBERS SECTION ***************/
 .team-page-container {
   padding: 0; }
@@ -130,25 +147,20 @@ body {
         width: 100%; }
 
 /*************** INDIVIDUAL DOCTOR PAGE ***************/
-.doctors-page-container {
-  display: flex;
-  flex-direction: column; }
-  .doctors-page-container .doctor-wrap {
-    flex: 1; }
-  .doctors-page-container .test {
-    flex: 1; }
-  .doctors-page-container .doctor-profile-image img {
-    width: 100%; }
-  .doctors-page-container .doctor-name-header {
-    margin-bottom: 20px; }
-  .doctors-page-container .doctor-bio p {
-    font-size: 1.2em;
-    margin: 15px 0; }
+.doctors-page-container .doctor-profile-image img {
+  width: 100%; }
+.doctors-page-container .doctor-name-header {
+  margin-bottom: 20px; }
+.doctors-page-container .doctor-bio p {
+  font-size: 1.2em;
+  margin: 15px 0; }
 
 /*************** FOOTER ***************/
 #footer {
   background-color: #2d3435;
   color: #fff; }
+  #footer a {
+    color: #fff; }
   #footer .container {
     padding: 30px 0; }
   #footer .footer-title {
