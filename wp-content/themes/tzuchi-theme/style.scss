@@ -34,6 +34,7 @@ body {
 }
 
 .main-flex-wrap {
+	z-index: 10;
 	min-height: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -46,7 +47,7 @@ body {
 
 .content-wrap {
 	flex: 1;
-	padding: 5% 0;
+	padding: 5% 0 7%;;
 
 	a {
 		text-decoration: none;
@@ -59,7 +60,15 @@ body {
 	height: 120px;
 	margin-bottom: 0;
 	background-color: #fff;
+	z-index: 99999;
 
+	#myNavbar {
+		background-color: #eee;
+
+		a {
+			margin: 0;
+		}
+	}
 
 	.navbar-nav>li>a {
 		margin-top: 35px;
@@ -151,6 +160,17 @@ body {
 
 @media (max-width: 768px) {
 
+	.navbar {
+	height: 0;
+	background-color: #fff;
+
+	.navbar-brand {
+		display: none;
+	}
+}
+
+
+
 	.news-section {
 		padding: 5%;
 
@@ -206,9 +226,6 @@ body {
 		}
 	}
 }
-
-
-
 
 
 

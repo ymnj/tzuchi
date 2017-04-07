@@ -12,18 +12,18 @@
   
   <div class="main-flex-wrap">
   <!-- Navigation -->
-  <nav class="navbar navbar-default topnav" role="navigation">
-      <div class="container topnav">
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand topnav" href="/tzuchi">
-                <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/layout/images/TCMC.png" title="" alt="" />
+              <a class="navbar-brand" href="/tzuchi">
+                <img src="<?php bloginfo('template_directory'); ?>/layout/images/TCMC.png" title="" alt="" />
               </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,7 +34,7 @@
                 'depth'             => 2,
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'navbar',
+                'container_id'      => 'myNavbar',
                 'menu_class'        => 'nav navbar-nav navbar-right',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker())
