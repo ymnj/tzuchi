@@ -8,6 +8,7 @@
 
 add_theme_support( 'post-thumbnails' );
 
+
 /******************* STYLESHEET *******************/
 
 function main_styles(){
@@ -60,6 +61,7 @@ add_action( 'widgets_init', 'footer_widgets_init' );
 
 /******************* CUSTOMIZER *******************/
 function create_customizer($wp_customize){
+
 
 // General Panel
 require_once get_template_directory() . '/inc/customizer/panels/general_panel_cust.php';

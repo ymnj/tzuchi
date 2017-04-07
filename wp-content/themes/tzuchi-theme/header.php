@@ -23,7 +23,7 @@
                   <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand topnav" href="/tzuchi">
-                <img src="<?php bloginfo('template_directory'); ?>/layout/images/TCMC.png" title="" alt="" />
+                <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/layout/images/TCMC.png" title="" alt="" />
               </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->

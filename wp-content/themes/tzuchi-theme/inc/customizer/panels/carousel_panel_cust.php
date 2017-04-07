@@ -10,50 +10,50 @@
 		'description' => 'Edit images in Carousel'
 	));
 
-	$wp_customize->add_setting('carousel_image_1', array(
+	$wp_customize->add_setting('carousel_banner_1', array(
 		'default' => ''
 	));
 
 	$wp_customize->add_control(
        new WP_Customize_Image_Control(
            $wp_customize,
-           'carousel_image_1',
+           'carousel_banner_1',
            array(
 	           'label'      => __( 'Image 1', 'tzuchi-theme' ),
 	           'section'    => 'carousel_section',
-	           'settings'   => 'carousel_image_1'
+	           'settings'   => 'carousel_banner_1'
            )
        )
    );
 
-	$wp_customize->add_setting('carousel_image_2', array(
+	$wp_customize->add_setting('carousel_banner_2', array(
 		'default' => ''
 	));
 
 	$wp_customize->add_control(
        new WP_Customize_Image_Control(
            $wp_customize,
-           'carousel_image_2',
+           'carousel_banner_2',
            array(
 	           'label'      => __( 'Image 1', 'tzuchi-theme' ),
 	           'section'    => 'carousel_section',
-	           'settings'   => 'carousel_image_2'
+	           'settings'   => 'carousel_banner_2'
            )
        )
    );
 
-	$wp_customize->add_setting('carousel_image_3', array(
+	$wp_customize->add_setting('carousel_banner_3', array(
 		'default' => ''
 	));
 
 	$wp_customize->add_control(
        new WP_Customize_Image_Control(
            $wp_customize,
-           'carousel_image_3',
+           'carousel_banner_3',
            array(
 	           'label'      => __( 'Image 1', 'tzuchi-theme' ),
 	           'section'    => 'carousel_section',
-	           'settings'   => 'carousel_image_3'
+	           'settings'   => 'carousel_banner_3'
            )
        )
    );

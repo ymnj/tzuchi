@@ -28,6 +28,7 @@
 	$links = first_four($mods, 'training')
 ?>	
 
+
 <div class="container content-wrap team-section">
 	<div class="intro-header text-center">
 		<h1><?php echo $team_general_title; ?></h1>
@@ -36,7 +37,7 @@
 	</div>
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
-		<div class="section-member col-lg-3 col-sm-6">
+		<div class="section-member col-lg-3 col-xs-6">
 			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link")) ?>">
 				<div class="link-wrap">
 					<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
@@ -50,7 +51,7 @@
 		<?php endfor; ?>
 	</div> <!-- END ROW -->
 
-	<p class="read-more text-center">
+	<p class="meet-our-team-more text-center">
 		<a href="<?php echo get_page_link(7); ?>">Meet our team</a>
 	</p>
 

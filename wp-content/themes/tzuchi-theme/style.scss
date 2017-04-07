@@ -15,10 +15,11 @@ This theme, like WordPress, is licensed under the GPL.
 
 body, html {
 	height: 100vh;
+	width: 100%;
 }
 
 body {
-	background-color: #eee;
+	background-color: #fff;
 
 	//General site wide
 	h1, h2, h3, p, li, ul {
@@ -99,11 +100,7 @@ body {
 
 .news-section {
 	background-color: #fff;
-	
-	.latest-post-wrap {
-	
-	//	padding-left: 10%;
-	}
+	border-bottom: 3px solid #3D9970;
 
 	h1, .services-sidebar-wrap h1 {
 		display: inline;
@@ -125,17 +122,25 @@ body {
 
 	.post-content {
 		margin-top: 20px;
+		line-height: 1.8em;
+	}
+
+	.read-full-post {
+		margin-top: 20px;
+
+		a{
+			padding: 10px 10px;
+			border: 1px solid black;
+		}
 	}
 }
 
 
 .services-sidebar-wrap {
-	//padding-right: 10%;
-	// background-color: #ffccd4;
 
 	.services-flex-wrap {
 		margin-top: 20px;
-		display: flex;
+		width: 100%;
 	}
 
 	img {
@@ -143,14 +148,75 @@ body {
 	}
 }
 
+
+@media (max-width: 768px) {
+
+	.news-section {
+		padding: 5%;
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h2, .post-date {
+		text-align: center;
+	}
+
+	.post-date, .post-content, .read-full-post {
+		font-size: 0.8em;
+	}
+
+	}
+
+	.section-member {
+		img {
+			height: 280px;
+		}
+	} // news-section
+	
+
+	.team-section {
+		
+		h1 {
+			font-size: 1.4em;
+		}
+
+		p {
+			font-size: 0.8em;
+			padding: 0 10%;
+		}
+
+		.member-box .section-member-name  {
+			font-size: 1.1em;
+		}
+
+		.member-box .section-member-training {
+			font-size: 0.8em;
+		}
+		
+	}
+}
+
+@media (max-width: 993px) {
+
+	.services-sidebar-wrap {
+		margin-top: 50px;
+		.services-flex-wrap {
+			margin: 20px auto 0;
+		}
+	}
+}
+
+
+
+
+
+
+
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 
 .team-section {
-	background-color: #eee;
-
-	a {
-		color: black;
-	}
+	background-color: #fff;
 
 	.intro-header {
 		margin-bottom: 5%;
@@ -164,18 +230,22 @@ body {
 		img {
 			width: 100%;
 			display: block;
+			max-height: 375px;
+			-o-object-fit: contain;
+    	object-fit: contain;
+
 		}
 		
 	}
 
-	.read-more {
+	.meet-our-team-more {
 		margin-top: 5%;
-	}
-}
 
-.link-wrap img {
-	border-top-right-radius:20px;
-	border-top-left-radius:20px;
+		a {
+			padding: 10px 10px;
+			border: 1px solid black;
+		}
+	}
 }
 
 .member-box {
@@ -201,9 +271,6 @@ body {
 	}
 }
 
-.read-more {
-	font-size: 1.5em;
-}
 
 
 /*************** SINGLE POST ***************/
