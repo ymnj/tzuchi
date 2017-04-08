@@ -54,7 +54,7 @@ function footer_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Footer Bottom Sidebar',
 		'id'            => 'footer_bottom',
-		'before_widget' => '<div class="footer-nav-col col-lg-3">',
+		'before_widget' => '<div class="footer-nav-col col-xs-6 col-sm-3">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="footer-title">',
 		'after_title'   => '</h2>',

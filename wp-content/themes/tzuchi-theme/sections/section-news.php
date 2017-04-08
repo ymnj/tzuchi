@@ -6,7 +6,9 @@
 					$post_array = get_posts( $args );
 					foreach($post_array as $post) : ?>
 					
-					<header class="text-center"><h1>Latest News</h1></header>
+					<header class="section-title text-center">
+						<h1>Latest News</h1>
+					</header>
 					<article class="front-page-news">
 						<figure class="post-img">
 							<img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>"/>		
@@ -26,7 +28,7 @@
 			<?php endforeach ?>
 		</div>
 		<div class="col-md-5 col-xs-12 services-sidebar-wrap">
-			<header class="text-center"><h1>Services</h1></header>
+			<header class="section-title text-center"><h1>Services</h1></header>
 			<div class="services-flex-wrap">
 				<div id="services-carousel" class="carousel slide" data-ride="carousel">
 

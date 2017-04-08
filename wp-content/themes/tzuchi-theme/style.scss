@@ -54,7 +54,6 @@ body {
 	}
 
 }
-
 /*************** NAVIGATION ***************/
 .navbar {
 	height: 120px;
@@ -63,11 +62,7 @@ body {
 	z-index: 99999;
 
 	#myNavbar {
-		background-color: #eee;
-
-		a {
-			margin: 0;
-		}
+		background-color: #fff;
 	}
 
 	.navbar-nav>li>a {
@@ -85,6 +80,7 @@ body {
 
 .navbar-default {
 	border: none;
+
 	.navbar-nav .active a, .navbar-nav .active a:hover,
 	.navbar-nav .active a:focus {
 		background-color: transparent;
@@ -154,76 +150,6 @@ body {
 
 	img {
 		width: 100%;
-	}
-}
-
-
-@media (max-width: 768px) {
-
-	.navbar {
-	height: 0;
-	background-color: #fff;
-
-	.navbar-brand {
-		display: none;
-	}
-}
-
-
-
-	.news-section {
-		padding: 5%;
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h2, .post-date {
-		text-align: center;
-	}
-
-	.post-date, .post-content, .read-full-post {
-		font-size: 0.8em;
-	}
-
-	}
-
-	.section-member {
-		img {
-			height: 280px;
-		}
-	} // news-section
-	
-
-	.team-section {
-		
-		h1 {
-			font-size: 1.4em;
-		}
-
-		p {
-			font-size: 0.8em;
-			padding: 0 10%;
-		}
-
-		.member-box .section-member-name  {
-			font-size: 1.1em;
-		}
-
-		.member-box .section-member-training {
-			font-size: 0.8em;
-		}
-		
-	}
-}
-
-@media (max-width: 993px) {
-
-	.services-sidebar-wrap {
-		margin-top: 50px;
-		.services-flex-wrap {
-			margin: 20px auto 0;
-		}
 	}
 }
 
@@ -406,4 +332,122 @@ body {
 	background-color: #404546;
 	color: grey;
 	padding: 20px 0;
+}
+
+
+
+
+
+/*************** MEDIA QUERIES ***************/
+
+
+@media (max-width: 400px) {
+	.member-box {
+		padding-top: 0;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.navbar {
+		height: 0;
+		background-color: #fff;
+
+		#myNavbar {
+			a {
+				margin-top: 0;
+			}
+		}
+
+		.navbar-brand {
+			display: none;
+		}
+
+		.navbar-nav .active a, .navbar-nav .active a:hover,
+		.navbar-nav .active a:focus {
+			border-bottom: none;
+		}
+ }
+
+	.news-section {
+		padding: 5%;
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h2, .post-date {
+		text-align: center;
+	}
+
+	.post-date, .post-content, .read-full-post {
+		font-size: 0.8em;
+	}
+
+	}
+
+	.section-member {
+		img {
+			height: 280px;
+		}
+	} // news-section
+	
+
+	.team-section {
+
+		padding-left: 15px;
+		padding-right: 15px;
+
+		h1 {
+			font-size: 1.4em;
+		}
+
+		p {
+			font-size: 0.8em;
+			padding: 0 10%;
+		}
+
+		.member-box .section-member-name  {
+			font-size: 1.1em;
+		}
+
+		.member-box .section-member-training {
+			font-size: 0.8em;
+		}
+		
+	}
+
+	.footer-nav-col {
+		height: 180px;
+	}
+
+	#footer .container {
+		font-size: 0.8em;
+		padding-bottom: 0;
+	}
+
+  #footer .footer-title {
+		font-size: 0.9em;
+		//border-bottom: none;
+		//padding-bottom: 0;
+		padding-top: 15px;
+	}
+
+
+	#sub-footer {
+		font-size: 80%;
+	}
+} // END 768px MEDIA
+
+
+
+@media (max-width: 993px) {
+
+	.services-sidebar-wrap {
+		margin-top: 50px;
+		.services-flex-wrap {
+			margin: 20px auto 0;
+		}
+	}
 }
