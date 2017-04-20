@@ -38,7 +38,7 @@
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
 		<div class="section-member col-lg-3 col-xs-6">
-			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link")) ?>">
+			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link", '7')) ?>">
 				<div class="link-wrap">
 					<img src="<?php image_check($images["team_members_number" . $i . "_image"]); ?>">
 						<div class="member-box text-center">

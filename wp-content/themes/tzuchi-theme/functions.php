@@ -1,10 +1,10 @@
 <?php 
 
 
-// function reset_mytheme_options() { 
-//     remove_theme_mods();
-// }
-// add_action( 'after_switch_theme', 'reset_mytheme_options' );
+function reset_mytheme_options() { 
+    remove_theme_mods();
+}
+add_action( 'after_switch_theme', 'reset_mytheme_options' );
 
 add_theme_support( 'post-thumbnails' );
 

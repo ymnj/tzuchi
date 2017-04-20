@@ -176,7 +176,6 @@ body {
 			max-height: 375px;
 			-o-object-fit: contain;
     	object-fit: contain;
-
 		}
 		
 	}
@@ -240,17 +239,15 @@ body {
 	}
 
 	.members-grid-wrapper{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: flex-end;
+		
 		.single-member {
-			width: 19%;
-			margin-bottom: 5%;
 			padding: 10px; 
 			// border: 1px solid darkgrey;
 			img {
 				width: 100%;
+				max-height: 375px;
+				-o-object-fit: contain;
+	    	object-fit: contain;
 			}
 		}
 	}
@@ -342,7 +339,7 @@ body {
 
 
 @media (max-width: 400px) {
-	.member-box {
+	.team-section .member-box {
 		padding-top: 0;
 	}
 }
@@ -387,7 +384,7 @@ body {
 
 	}
 
-	.section-member {
+	.section-member, .single-member {
 		img {
 			height: 280px;
 		}
@@ -415,7 +412,6 @@ body {
 		.member-box .section-member-training {
 			font-size: 0.8em;
 		}
-		
 	}
 
 	.footer-nav-col {
