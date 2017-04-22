@@ -23,7 +23,14 @@
 						<section>
 							<p class="post-content"><?php echo $post->post_content ?></p>
 						</section>
-						
+
+						<!-- If comments are open or we have at least one comment, load up the comment template. -->
+						<?php if ( comments_open() || get_comments_number() ) :
+						     comments_template();
+						 endif;
+						 ?>
+
+
 					</article>
 				</div>
 			</div>
