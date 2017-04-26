@@ -2,7 +2,7 @@
 	<div class="footer-container">
 		<footer id="footer">
 			<div class="container">
-				<?php dynamic_sidebar('footer_bottom'); ?>
+				<?php if (function_exists('dynamic_sidebar')) dynamic_sidebar('footer_bottom'); ?>
 			</div>
 		</footer>
 		<footer id="sub-footer" class="text-center">

@@ -69,11 +69,13 @@ body {
 
 /*************** CAROUSEL ***************/
 #carousel {
+  min-height: 250px;
   max-height: 500px; }
   #carousel .carousel-inner {
     max-height: 500px; }
     #carousel .carousel-inner img {
       width: 100%;
+      min-height: 250px;
       object-fit: cover; }
 
 /*************** DEFAULT PAGE ***************/
@@ -97,7 +99,7 @@ body {
   margin: 20px 0; }
   .front-page-news .post-img img, .single-post-wrap .post-img img {
     width: 100%;
-    height: 240px;
+    max-height: 240px;
     object-fit: contain; }
 .front-page-news .post-content, .single-post-wrap .post-content {
   margin-top: 20px;
@@ -204,7 +206,10 @@ body {
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 400px) {
   .team-section .member-box {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  #carousel {
+    margin-bottom: 20px; } }
 @media (max-width: 768px) {
   .navbar {
     height: 0;
