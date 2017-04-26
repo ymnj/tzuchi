@@ -68,6 +68,14 @@ body {
     margin: 35px 15px 0; }
 
 /*************** CAROUSEL ***************/
+#carousel {
+  max-height: 500px; }
+  #carousel .carousel-inner {
+    max-height: 500px; }
+    #carousel .carousel-inner img {
+      width: 100%;
+      object-fit: cover; }
+
 /*************** DEFAULT PAGE ***************/
 .default-page-container {
   min-height: 100%; }
@@ -82,15 +90,20 @@ body {
     border-top: 5px solid #3D9970;
     border-bottom: 2px solid #3D9970; }
 
+.front-page-news {
+  max-height: 706px; }
+
 .front-page-news .post-img, .single-post-wrap .post-img {
   margin: 20px 0; }
   .front-page-news .post-img img, .single-post-wrap .post-img img {
-    width: 100%; }
+    width: 100%;
+    height: 240px;
+    object-fit: contain; }
 .front-page-news .post-content, .single-post-wrap .post-content {
   margin-top: 20px;
   line-height: 1.8em; }
 .front-page-news .read-full-post, .single-post-wrap .read-full-post {
-  margin-top: 20px; }
+  margin: 20px 0; }
   .front-page-news .read-full-post a, .single-post-wrap .read-full-post a {
     padding: 10px 10px;
     border: 1px solid black; }
@@ -99,7 +112,8 @@ body {
   margin-top: 20px;
   width: 100%; }
 .services-sidebar-wrap img {
-  width: 100%; }
+  width: 100%;
+  height: 706px; }
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {

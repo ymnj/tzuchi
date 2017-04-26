@@ -20,8 +20,8 @@
 		}
 	};
 
-	$team_general_title = get_theme_mod('team_members_general_title', 'This is a default title');
-	$team_general_description = get_theme_mod('team_members_general_description', 'This is a default description text');
+	$team_general_title = get_theme_mod('team_members_general_title', 'Our teammates take care to everyone!');
+	$team_general_description = get_theme_mod('team_members_general_description', 'We provide the great healers (TCM doctors) to truly work for people, with pain and sickness in mind.');
 	$names = first_four($mods, 'name');
 	$training = first_four($mods, 'training');
 	$images = first_four($mods, 'image');

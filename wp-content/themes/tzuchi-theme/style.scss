@@ -95,6 +95,17 @@ body {
 /*************** CAROUSEL ***************/
 
 
+#carousel {
+	max-height: 500px;
+	.carousel-inner {
+		max-height: 500px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
 
 /*************** DEFAULT PAGE ***************/
 .default-page-container {
@@ -105,6 +116,7 @@ body {
 /*************** FRONT PAGE NEWS SECTION ***************/
 
 .news-section {
+
 	background-color: #fff;
 	border-bottom: 3px solid #3D9970;
 
@@ -116,6 +128,10 @@ body {
 	}
 }
 
+.front-page-news {
+	max-height: 706px;
+}
+
 .front-page-news, .single-post-wrap {
 
 	.post-img {
@@ -123,6 +139,8 @@ body {
 
 		img {
 			width: 100%;
+			height: 240px;
+			object-fit: contain;
 		}
 	}
 
@@ -132,7 +150,7 @@ body {
 	}
 
 	.read-full-post {
-		margin-top: 20px;
+		margin: 20px 0;
 
 		a{
 			padding: 10px 10px;
@@ -151,6 +169,7 @@ body {
 
 	img {
 		width: 100%;
+		height: 706px;
 	}
 }
 

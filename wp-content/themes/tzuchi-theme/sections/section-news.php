@@ -11,15 +11,19 @@
 					</header>
 					<article class="front-page-news">
 						<figure class="post-img">
-							<img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>"/>		
+							<?php if ( has_post_thumbnail() ) {
+							the_post_thumbnail();
+							} else { ?>
+							<img src="<?php bloginfo('template_directory'); ?>/layout/images/default_featured_image.png" alt="<?php the_title(); ?>" />
+							<?php } ?>
 						</figure>
 
 						<header>
 							<h2><?php echo $post->post_name ?></h2>
 						</header>
-						<p class="post-date"><?php echo mysql2date('F m, Y', $post->post_date) ?></p>
+						<p class="post-date"><?php echo mysql2date('F j, Y', $post->post_date) ?></p>
 						<section>
-							<p class="post-content"><?php echo substr($post->post_content, 0, 1400) . "..." ?></p>
+							<p class="post-content"><?php echo substr($post->post_content, 0, 1300) . "..." ?></p>
 						</section>
 						<p class="read-full-post text-center">
 							<a href="<?php the_permalink(); ?>">Read More</a>
@@ -35,10 +39,10 @@
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">
-				      <img src="http://localhost/tzuchi/wp-content/uploads/2017/04/TCM-in-Burnaby-Hospital_front-window_Page_1-1.jpg" alt="Tzuchi TCM services">
+				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm_services_banner1.jpg">
 				    </div>
 				    <div class="item">
-				      <img src="http://tzuchicanada.org/tcmc/wp-content/uploads/2017/02/TCM-in-Burnaby-Hospital_front-window_Page_2.jpg" alt="TzuChi who we serve">
+				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm_services_banner2.jpg">
 				    </div>
 				  </div>
 
