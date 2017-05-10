@@ -39,10 +39,10 @@
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">
-				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm_services_banner1.jpg">
+				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm-services-banner1.jpg">
 				    </div>
 				    <div class="item">
-				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm_services_banner2.jpg">
+				      <img src="<?php bloginfo('template_directory'); ?>/layout/images/tcm-services-banner2.jpg">
 				    </div>
 				  </div>
 

@@ -69,10 +69,9 @@ body {
 
 /*************** CAROUSEL ***************/
 #carousel {
-  min-height: 250px;
-  max-height: 500px; }
+  height: 500px; }
   #carousel .carousel-inner {
-    max-height: 500px; }
+    height: 500px; }
     #carousel .carousel-inner img {
       width: 100%;
       min-height: 250px;
@@ -124,12 +123,20 @@ body {
     margin-bottom: 5%; }
     .team-section .intro-header p {
       margin-top: 5%; }
-  .team-section .section-member img {
-    width: 100%;
-    display: block;
-    max-height: 375px;
-    -o-object-fit: contain;
-    object-fit: contain; }
+  .team-section .row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .team-section .section-member {
+    width: 20%; }
+    .team-section .section-member img {
+      width: 100%;
+      display: block;
+      max-height: 375px;
+      -o-object-fit: cover;
+      object-fit: cover; }
   .team-section .meet-our-team-more {
     margin-top: 5%; }
     .team-section .meet-our-team-more a {
@@ -139,9 +146,7 @@ body {
 .member-box {
   background-color: #fff;
   color: #000;
-  padding: 15px 0;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px; }
+  padding: 15px 0; }
   .member-box .section-member-name, .member-box .member-name {
     font-size: 20px;
     margin-bottom: 5%; }
@@ -205,9 +210,6 @@ body {
 
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 400px) {
-  .team-section .member-box {
-    padding-top: 0; }
-
   #carousel {
     margin-bottom: 20px; } }
 @media (max-width: 768px) {
@@ -231,21 +233,19 @@ body {
     .news-section .post-date, .news-section .post-content, .news-section .read-full-post {
       font-size: 0.8em; }
 
-  .section-member img, .single-member img {
-    height: 280px; }
+  .section-member {
+    flex: 1 1 46%;
+    padding: 5%; }
 
-  .team-section {
-    padding-left: 15px;
-    padding-right: 15px; }
-    .team-section h1 {
-      font-size: 1.4em; }
-    .team-section p {
-      font-size: 0.8em;
-      padding: 0 10%; }
-    .team-section .member-box .section-member-name {
-      font-size: 1.1em; }
-    .team-section .member-box .section-member-training {
-      font-size: 0.8em; }
+  .team-section h1 {
+    font-size: 1.4em; }
+  .team-section p {
+    font-size: 0.8em;
+    padding: 0 10%; }
+  .team-section .member-box .section-member-name {
+    font-size: 1.1em; }
+  .team-section .member-box .section-member-training {
+    font-size: 0.8em; }
 
   .footer-nav-col {
     height: 180px; }

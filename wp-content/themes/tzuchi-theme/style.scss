@@ -96,10 +96,10 @@ body {
 
 
 #carousel {
-	min-height: 250px;
-	max-height: 500px;
+	height: 500px;
+	// max-height: 500px;
 	.carousel-inner {
-		max-height: 500px;
+		height: 500px;
 		img {
 			width: 100%;
 			min-height: 250px;			
@@ -190,14 +190,23 @@ body {
 		}
 	}
 
+	.row {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 	.section-member {
+		width: 20%;
 
 		img {
 			width: 100%;
 			display: block;
 			max-height: 375px;
-			-o-object-fit: contain;
-    	object-fit: contain;
+			-o-object-fit: cover;
+    	object-fit: cover;
 		}
 		
 	}
@@ -216,8 +225,6 @@ body {
 	background-color: #fff;
 	color: #000;
 	padding: 15px 0;
-	border-bottom-right-radius:20px;
-	border-bottom-left-radius:20px;
 
 	.section-member-name, .member-name {
 		font-size: 20px;
@@ -361,10 +368,6 @@ body {
 
 
 @media (max-width: 400px) {
-	.team-section .member-box {
-		padding-top: 0;
-	}
-
 	#carousel {
 		margin-bottom: 20px;
 	}
@@ -396,31 +399,26 @@ body {
 	.news-section {
 		padding: 5%;
 
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h2, .post-date {
-		text-align: center;
-	}
-
-	.post-date, .post-content, .read-full-post {
-		font-size: 0.8em;
-	}
-
-	}
-
-	.section-member, .single-member {
-		img {
-			height: 280px;
+		h2 {
+			font-size: 1.5em;
 		}
+
+		h2, .post-date {
+			text-align: center;
+		}
+
+		.post-date, .post-content, .read-full-post {
+			font-size: 0.8em;
+		}
+	}
+
+	.section-member {
+		flex: 1 1 46%;
+		padding: 5%;
 	} // news-section
 	
 
 	.team-section {
-
-		padding-left: 15px;
-		padding-right: 15px;
 
 		h1 {
 			font-size: 1.4em;
@@ -461,7 +459,6 @@ body {
 		font-size: 80%;
 	}
 } // END 768px MEDIA
-
 
 
 @media (max-width: 993px) {
