@@ -1,0 +1,55 @@
+/*************** FOOTER ***************/
+
+#footer, {
+  background-color: #2d3435;
+  color: #fff;
+
+  a{
+    color: #fff;
+    
+  }
+
+  .container {
+    padding: 30px 0;;
+  }
+
+  .footer-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
+  }
+
+  .footer-nav-col {
+    background-color: #2d3435;
+    letter-spacing: 0.5px;
+    li {
+      margin-bottom: 8px;
+      font-size: 0.9em;
+    }
+  }
+
+  //Menu Column
+  .footer-nav-col:nth-child(1) {
+    
+  }
+  //Clinic Column
+  .footer-nav-col:nth-child(2){
+    
+  }
+  //Contact Column
+  .footer-nav-col:nth-child(3) {  
+    
+  }
+  //Office Column
+  .footer-nav-col:nth-child(4) {
+    
+  }
+}
+
+#sub-footer {
+  background-color: #404546;
+  color: grey;
+  padding: 20px 0;
+}

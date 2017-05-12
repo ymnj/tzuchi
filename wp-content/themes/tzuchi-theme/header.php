@@ -30,7 +30,7 @@
           <?php
             wp_nav_menu( array(
                 'menu'              => 'Main Navigation',
-                'theme_location'    => 'navigation-menu',
+                'theme_location'    => 'Main',
                 'depth'             => 2,
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',

@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^http://localhost/tzuchi/wp-admin/admin.php\?page\=wbk-appointments.* [NC]
-RewriteRule .* - [F]

@@ -1,3 +1,4 @@
+
 <div class="container content-wrap news-section">
 	<div class="row">
 		<div class="col-md-7 col-xs-12 latest-post-wrap">
@@ -19,7 +20,7 @@
 						</figure>
 
 						<header>
-							<h2><?php echo $post->post_name ?></h2>
+							<h2><?php echo $post->post_title ?></h2>
 						</header>
 						<p class="post-date"><?php echo mysql2date('F j, Y', $post->post_date) ?></p>
 						<section>
@@ -47,14 +48,14 @@
 				  </div>
 
 				  <!-- Controls -->
-				  <a class="left carousel-control" href="#services-carousel" role="button" data-slide="prev">
+				  <!-- <a class="left carousel-control" href="#services-carousel" role="button" data-slide="prev">
 				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
 				  </a>
 				  <a class="right carousel-control" href="#services-carousel" role="button" data-slide="next">
 				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
-				  </a>
+				  </a> -->
 				</div>
 			</div>
 		</div>

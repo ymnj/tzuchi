@@ -12,10 +12,10 @@
       <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner-group.jpg") ?>" alt="...">
     </div>
     <div class="item">
-      <img src="<?php echo get_theme_mod('carousel_banner_2') ?>" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner2.jpg")  ?>" alt="...">
     </div>
     <div class="item">
-      <img src="<?php echo get_theme_mod('carousel_banner_3') ?>" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner3.jpg") ?>" alt="...">
     </div>
   </div>
 

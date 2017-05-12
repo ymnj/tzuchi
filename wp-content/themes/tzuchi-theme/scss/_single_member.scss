@@ -1,0 +1,19 @@
+/*************** INDIVIDUAL DOCTOR PAGE ***************/
+
+.doctors-page-container {
+
+  .doctor-profile-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .doctor-name-header {
+    margin-bottom: 20px;
+  }
+
+  .doctor-bio p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+}

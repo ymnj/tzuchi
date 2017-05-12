@@ -49,19 +49,19 @@ add_action( 'init', 'register_my_menu' );
  * Register our sidebars and widgetized areas.
  *
  */
-function footer_widgets_init() {
+// function footer_widgets_init() {
 
-	register_sidebar( array(
-		'name'          => 'Footer Bottom Sidebar',
-		'id'            => 'footer_bottom',
-		'before_widget' => '<div class="footer-nav-col col-xs-6 col-sm-3">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="footer-title">',
-		'after_title'   => '</h2>',
-	) );
+// 	register_sidebar( array(
+// 		'name'          => 'Footer Bottom Sidebar',
+// 		'id'            => 'footer_bottom',
+// 		'before_widget' => '<div class="footer-nav-col col-xs-6 col-sm-3">',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h2 class="footer-title">',
+// 		'after_title'   => '</h2>',
+// 	) );
 
-}
-add_action( 'widgets_init', 'footer_widgets_init' );
+// }
+// add_action( 'widgets_init', 'footer_widgets_init' );
 
 
 /******************* CUSTOMIZER *******************/

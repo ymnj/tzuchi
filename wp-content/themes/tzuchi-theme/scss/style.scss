@@ -1,0 +1,174 @@
+/*
+Theme Name: TzuChi Theme
+Theme URI: 
+Author: Tom Hung
+Author URI: http://www.tomhung.ca/
+Description: Theme for TzuChi
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: 
+Tags: grid-layout, footer-widgets, blog, education, e-commerce
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+body, html {
+	height: 100vh;
+	width: 100%;
+}
+
+body {
+	background-color: #fff;
+
+	//General site wide
+	h1, h2, h3, p, li, ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+}
+
+.main-flex-wrap {
+	z-index: 10;
+	min-height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.content-wrap {
+	flex: 1;
+	padding-top: 5%;
+	padding-bottom: 7%;
+
+	a {
+		text-decoration: none;
+	}
+
+}
+
+@import 'main';
+@import 'single';
+@import 'team_members';
+@import 'single_member';
+@import 'footer';
+
+
+
+
+
+/*************** MEDIA QUERIES ***************/
+
+
+@media (max-width: 400px) {
+	#carousel {
+		margin-bottom: 20px;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.navbar {
+		height: 0;
+		background-color: #fff;
+
+		#myNavbar {
+			a {
+				margin-top: 0;
+			}
+		}
+
+		.navbar-brand {
+			display: none;
+		}
+
+		.navbar-nav .active a, .navbar-nav .active a:hover,
+		.navbar-nav .active a:focus {
+			border-bottom: none;
+		}
+ }
+
+	.news-section {
+		padding: 5%;
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+		h2, .post-date {
+			text-align: center;
+		}
+
+		.post-date, .post-content, .read-full-post {
+			font-size: 0.8em;
+		}
+	}
+
+	.section-member {
+		flex: 1 1 46%;
+		padding: 5%;
+	} // news-section
+	
+
+	.team-section {
+
+		h1 {
+			font-size: 1.4em;
+		}
+
+		p {
+			font-size: 0.8em;
+			padding: 0 10%;
+		}
+
+		.member-box .section-member-name  {
+			font-size: 1.1em;
+		}
+
+		.member-box .section-member-training {
+			font-size: 0.8em;
+		}
+	}
+
+	.footer-nav-col {
+		height: 180px;
+	}
+
+	#footer .container {
+		font-size: 0.8em;
+		padding-bottom: 0;
+	}
+
+  #footer .footer-title {
+		font-size: 0.9em;
+		//border-bottom: none;
+		//padding-bottom: 0;
+		padding-top: 15px;
+	}
+
+
+	#sub-footer {
+		font-size: 80%;
+	}
+} // END 768px MEDIA
+
+
+@media (max-width: 993px) {
+
+	.services-sidebar-wrap {
+		margin-top: 50px;
+		.services-flex-wrap {
+			margin: 20px auto 0;
+		}
+	}
+}

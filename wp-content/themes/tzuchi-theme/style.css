@@ -104,7 +104,7 @@ body {
   margin-top: 20px;
   line-height: 1.8em; }
 .front-page-news .read-full-post, .single-post-wrap .read-full-post {
-  margin: 20px 0; }
+  margin-top: 5%; }
   .front-page-news .read-full-post a, .single-post-wrap .read-full-post a {
     padding: 10px 10px;
     border: 1px solid black; }
@@ -154,8 +154,7 @@ body {
     font-size: 1em; }
   .member-box .member-training {
     font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden; }
+    white-space: nowrap; }
 
 /*************** SINGLE POST ***************/
 /*************** FULL TEAM MEMBERS SECTION ***************/
