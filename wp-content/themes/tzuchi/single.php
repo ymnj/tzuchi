@@ -16,7 +16,7 @@
 							<?php if ( has_post_thumbnail() ) {
 							the_post_thumbnail();
 							} else { ?>
-							<img src="<?php bloginfo('template_directory'); ?>/layout/images/default_featured_image.png" alt="<?php the_title(); ?>" />
+							<img src="<?php bloginfo('template_directory'); ?>/assets/images/default_featured_image.png" alt="<?php the_title(); ?>" />
 							<?php } ?>
 						</figure>
 						<header>

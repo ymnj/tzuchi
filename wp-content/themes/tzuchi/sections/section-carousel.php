@@ -1,4 +1,4 @@
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div id="main-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -9,7 +9,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner-group.jpg") ?>" alt="...">
+      <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner1.jpg") ?>" alt="...">
     </div>
     <div class="item">
       <img src="<?php echo get_theme_mod('carousel_banner_1', get_template_directory_uri() . "/layout/images/banner2.jpg")  ?>" alt="...">
@@ -29,3 +29,5 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+

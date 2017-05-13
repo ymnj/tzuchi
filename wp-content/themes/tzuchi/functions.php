@@ -1,10 +1,10 @@
 <?php 
 
 
-// function reset_mytheme_options() { 
-//     remove_theme_mods();
-// }
-// add_action( 'after_switch_theme', 'reset_mytheme_options' );
+function reset_mytheme_options() { 
+    remove_theme_mods();
+}
+add_action( 'after_switch_theme', 'reset_mytheme_options' );
 
 add_theme_support( 'post-thumbnails' );
 
@@ -43,25 +43,6 @@ function register_my_menu() {
   // register_nav_menu('footer-nav-menu',__( 'Footer Nav' ));
 }
 add_action( 'init', 'register_my_menu' );
-
-/******************* WIDGET *******************/
-/**
- * Register our sidebars and widgetized areas.
- *
- */
-// function footer_widgets_init() {
-
-// 	register_sidebar( array(
-// 		'name'          => 'Footer Bottom Sidebar',
-// 		'id'            => 'footer_bottom',
-// 		'before_widget' => '<div class="footer-nav-col col-xs-6 col-sm-3">',
-// 		'after_widget'  => '</div>',
-// 		'before_title'  => '<h2 class="footer-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-
-// }
-// add_action( 'widgets_init', 'footer_widgets_init' );
 
 
 /******************* CUSTOMIZER *******************/

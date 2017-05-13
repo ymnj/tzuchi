@@ -31,19 +31,24 @@
 	$default_teammembers = array(
 		array('name' => 'Dr. Sam Chen',
 					'edu'  => 'R.Ac, R.TCM.P',
-					'img'  =>  get_template_directory_uri() . "/assets/images/dr-chen.jpg"),
+					'img'  =>  get_template_directory_uri() . "/layout/images/dr-chen.jpg"),
 	  array('name' => 'Dr. Aldred Man',
 	  			'edu'  => 'RN. RPN, R.TCM.P, R.Ac',
-	  			'img'  =>  get_template_directory_uri() . "/assets/images/dr-wen.jpg"),
+	  			'img'  =>  get_template_directory_uri() . "/layout/images/dr-wen.jpg"),
 	  array('name' => 'Dr. John Situ',
 	  			'edu'  => 'R.TCM.P',
-	  			'img'  =>  get_template_directory_uri() . "/assets/images/dr-suto.jpg"),
+	  			'img'  =>  get_template_directory_uri() . "/layout/images/dr-suto.jpg"),
 	  array('name' => 'Dr. Claire Kao',
 	  			'edu'  => 'DR. TCM',
-	  			'img'  =>  get_template_directory_uri() . "/assets/images/dr-kao.jpg")
+	  			'img'  =>  get_template_directory_uri() . "/layout/images/dr-kao.jpg")
 	);
 
 ?>	
+
+
+<pre>
+	<?php var_dump($mods) ?>
+</pre>
 
 
 <div class="container content-wrap team-section">
