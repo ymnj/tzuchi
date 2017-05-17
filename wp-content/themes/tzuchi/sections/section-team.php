@@ -22,7 +22,7 @@
 	// };
 
 	// This gets the first four declared team members from the customizer and displays them on the front page. Default placeholders will be displayed if customize information has not been supplied yet.
-	$team_general_title = get_theme_mod('team_members_general_title', 'Our teammates take care to everyone!');
+	$team_general_title = get_theme_mod('team_members_general_title', 'Our teammates take care of everyone!');
 	$team_general_description = get_theme_mod('team_members_general_description', 'We provide the great healers (TCM doctors) to truly work for people, with pain and sickness in mind.');
 	// $links = first_four($mods, 'training');
 
@@ -49,7 +49,6 @@
 <pre>
 	<?php var_dump($mods) ?>
 </pre>
-
 
 <div class="container content-wrap team-section">
 	<div class="intro-header text-center">

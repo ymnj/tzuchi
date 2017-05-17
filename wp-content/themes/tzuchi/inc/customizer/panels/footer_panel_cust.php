@@ -90,6 +90,17 @@
 			'section'  => 'footer_col_one'
 		));
 
+		$wp_customize->add_setting('footer_col_one_item1_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_one_item1_link', array(
+			'label'   => __( esc_html__('Item 1 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_one_item1_link',
+			'section' => 'footer_col_one'
+		));
+
+
 		/************ List Item Two ************/
 		$wp_customize->add_setting('footer_col_one_item2', array(
 			'default' => __('User Registration', 'tzuchi-theme')
@@ -99,6 +110,17 @@
 			'label'    => __( esc_html__('List Item 2'), 'tzuchi-theme' ),
 			'section'  => 'footer_col_one'
 		));
+
+		$wp_customize->add_setting('footer_col_one_item2_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_one_item2_link', array(
+			'label'   => __( esc_html__('Item 2 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_one_item2_link',
+			'section' => 'footer_col_one'
+		));
+
 
 		/************ List Item Three ************/
 		$wp_customize->add_setting('footer_col_one_item3', array(
@@ -110,6 +132,17 @@
 			'section'  => 'footer_col_one'
 		));
 
+		$wp_customize->add_setting('footer_col_one_item3_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_one_item3_link', array(
+			'label'   => __( esc_html__('Item 3 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_one_item3_link',
+			'section' => 'footer_col_one'
+		));
+
+
 		/************ List Item Four ************/
 		$wp_customize->add_setting('footer_col_one_item4', array(
 			'default' => __('', 'tzuchi-theme')
@@ -120,6 +153,15 @@
 			'section'  => 'footer_col_one'
 		));
 
+		$wp_customize->add_setting('footer_col_one_item4_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_one_item4_link', array(
+			'label'   => __( esc_html__('Item 4 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_one_item4_link',
+			'section' => 'footer_col_one'
+		));
 
 
 
@@ -158,6 +200,16 @@
 			'section'  => 'footer_col_two'
 		));
 
+		$wp_customize->add_setting('footer_col_two_item1_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_two_item1_link', array(
+			'label'   => __( esc_html__('Item 1 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_two_item1_link',
+			'section' => 'footer_col_two'
+		));
+
 		/************ List Item Two ************/
 		$wp_customize->add_setting('footer_col_two_item2', array(
 			'default' => __('Sumas First Nation Health Centre', 'tzuchi-theme')
@@ -166,6 +218,16 @@
 		$wp_customize->add_control('footer_col_two_item2', array(
 			'label'    => __( esc_html__('List Item 2'), 'tzuchi-theme' ),
 			'section'  => 'footer_col_two'
+		));
+
+		$wp_customize->add_setting('footer_col_two_item2_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_two_item2_link', array(
+			'label'   => __( esc_html__('Item 2 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_two_item2_link',
+			'section' => 'footer_col_two'
 		));
 
 		/************ List Item Three ************/
@@ -178,6 +240,16 @@
 			'section'  => 'footer_col_two'
 		));
 
+		$wp_customize->add_setting('footer_col_two_item3_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_two_item3_link', array(
+			'label'   => __( esc_html__('Item 3 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_two_item3_link',
+			'section' => 'footer_col_two'
+		));
+
 		/************ List Item Four ************/
 		$wp_customize->add_setting('footer_col_two_item4', array(
 			'default' => __('', 'tzuchi-theme')
@@ -186,6 +258,16 @@
 		$wp_customize->add_control('footer_col_two_item4', array(
 			'label'    => __( esc_html__('List Item 4'), 'tzuchi-theme' ),
 			'section'  => 'footer_col_two'
+		));
+
+		$wp_customize->add_setting('footer_col_two_item4_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_two_item4_link', array(
+			'label'   => __( esc_html__('Item 4 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_two_item4_link',
+			'section' => 'footer_col_two'
 		));
 
 
@@ -226,6 +308,16 @@
 			'section'  => 'footer_col_three'
 		));
 
+		$wp_customize->add_setting('footer_col_three_item1_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_three_item1_link', array(
+			'label'   => __( esc_html__('Item 1 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_three_item1_link',
+			'section' => 'footer_col_three'
+		));
+
 		/************ List Item Two ************/
 		$wp_customize->add_setting('footer_col_three_item2', array(
 			'default' => __('tcmcrsg@gmail.com', 'tzuchi-theme')
@@ -234,6 +326,16 @@
 		$wp_customize->add_control('footer_col_three_item2', array(
 			'label'    => __( esc_html__('List Item 2'), 'tzuchi-theme' ),
 			'section'  => 'footer_col_three'
+		));
+
+		$wp_customize->add_setting('footer_col_three_item2_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_three_item2_link', array(
+			'label'   => __( esc_html__('Item 2 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_three_item2_link',
+			'section' => 'footer_col_three'
 		));
 
 		/************ List Item Three ************/
@@ -246,6 +348,16 @@
 			'section'  => 'footer_col_three'
 		));
 
+		$wp_customize->add_setting('footer_col_three_item3_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_three_item3_link', array(
+			'label'   => __( esc_html__('Item 3 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_three_item3_link',
+			'section' => 'footer_col_three'
+		));
+
 		/************ List Item Four ************/
 		$wp_customize->add_setting('footer_col_three_item4', array(
 			'default' => __('', 'tzuchi-theme')
@@ -256,6 +368,15 @@
 			'section'  => 'footer_col_three'
 		));
 
+		$wp_customize->add_setting('footer_col_three_item4_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_three_item4_link', array(
+			'label'   => __( esc_html__('Item 4 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_three_item4_link',
+			'section' => 'footer_col_three'
+		));
 
 
 	/***********************************************/
@@ -292,6 +413,16 @@
 			'section'  => 'footer_col_four'
 		));
 
+		$wp_customize->add_setting('footer_col_four_item1_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_four_item1_link', array(
+			'label'   => __( esc_html__('Item 1 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_four_item1_link',
+			'section' => 'footer_col_four'
+		));
+
 		/************ List Item Two ************/
 		$wp_customize->add_setting('footer_col_four_item2', array(
 			'default' => __('8850, Osler street', 'tzuchi-theme')
@@ -300,6 +431,16 @@
 		$wp_customize->add_control('footer_col_four_item2', array(
 			'label'    => __( esc_html__('List Item 2'), 'tzuchi-theme' ),
 			'section'  => 'footer_col_four'
+		));
+
+		$wp_customize->add_setting('footer_col_four_item2_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_four_item2_link', array(
+			'label'   => __( esc_html__('Item 2 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_three_item2_link',
+			'section' => 'footer_col_four'
 		));
 
 		/************ List Item Three ************/
@@ -312,6 +453,16 @@
 			'section'  => 'footer_col_four'
 		));
 
+		$wp_customize->add_setting('footer_col_four_item3_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_four_item3_link', array(
+			'label'   => __( esc_html__('Item 3 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_four_item3_link',
+			'section' => 'footer_col_four'
+		));
+
 		/************ List Item Four ************/
 		$wp_customize->add_setting('footer_col_four_item4', array(
 			'default' => __('', 'tzuchi-theme')
@@ -322,6 +473,15 @@
 			'section'  => 'footer_col_four'
 		));
 
+		$wp_customize->add_setting('footer_col_four_item4_link', array(
+			'default' => __('#', 'tzuchi-theme')
+		));
+
+		$wp_customize->add_control('footer_col_four_item4_link', array(
+			'label'   => __( esc_html__('Item 4 Link'), 'tzuchi-theme'),
+			'setting' => 'footer_col_four_item4_link',
+			'section' => 'footer_col_four'
+		));
 
 
 

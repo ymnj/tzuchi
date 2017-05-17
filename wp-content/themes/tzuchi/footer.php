@@ -1,5 +1,10 @@
 
 	<div class="footer-container">
+
+	<pre>
+		<?php echo get_theme_mod("footer_col_one_item1_link", "asdasd") ?>
+	</pre>
+		
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
@@ -7,7 +12,7 @@
 						<h2 class="footer-title"><?php echo get_theme_mod("heading_title_1", "Menu") ?></h2>
 						<ul>
 							<li><?php echo get_theme_mod("footer_col_one_item1", "Login") ?></li>
-							<li><?php echo get_theme_mod("footer_col_one_item2", "User Registration") ?></li>
+							<li><?php echo get_theme_mod("footer_col_one_item2_link", "User Registration") ?></li>
 							<li><?php echo get_theme_mod("footer_col_one_item3", "Make an Appointment") ?></li>
 							<li><?php echo get_theme_mod("footer_col_one_item4") ?></li>
 						</ul>	

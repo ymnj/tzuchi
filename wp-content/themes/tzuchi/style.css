@@ -108,7 +108,7 @@ body {
   .front-page-news .post-img img, .single-post-wrap .post-img img {
     width: 100%;
     max-height: 240px;
-    object-fit: contain; }
+    object-fit: cover; }
 .front-page-news .post-content, .single-post-wrap .post-content {
   margin-top: 20px;
   line-height: 1.8em; }

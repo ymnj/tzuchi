@@ -12,7 +12,21 @@
 get_header(); ?>
 
 	<div class="container content-wrap default-page-container">
-		This is default page
+		<?php 
+    if( have_posts() ):
+      while( have_posts() ): the_post(); ?>
+    
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <?php the_title( '<h1 class="about-page-title">', '</h1>' ); ?> 
+          <div class="about-content">
+           <p><?php the_content()?></p>
+          </div>  
+        </div>
+      </div>
+      <?php endwhile; 
+    endif;
+  ?>
 	</div>
 
 <?php get_footer(); ?>
