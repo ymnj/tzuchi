@@ -11,6 +11,7 @@
 		<?php 
 		if( have_posts() ):
 			while( have_posts() ): the_post(); ?>
+		
 			<div class="row">
 				<div class="col-sm-3">
 				<?php the_post_thumbnail('large', ['class' => 'doctor-profile-image img-responsive']); ?>

@@ -38,9 +38,8 @@
 /*************** CAROUSEL ***************/
 
 
-#carousel {
-  //height: 500px;
-  
+#main-carousel {
+
   .carousel-inner {
     height: 500px;
     .item {
@@ -51,6 +50,16 @@
       width: 100%; /* Adhere to container width. */      
       object-fit: cover;
     }
+  }
+}
+
+#services-carousel.carousel-fade {
+  .item.active {
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
   }
 }
 
@@ -88,7 +97,7 @@
     img {
       width: 100%;
       max-height: 240px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 
@@ -97,9 +106,8 @@
     line-height: 1.8em;
   }
 
-  .read-full-post,  {
+  .read-full-post  {
     margin-top: 5%;
-
     a{
       padding: 10px 10px;
       border: 1px solid black;
@@ -109,9 +117,7 @@
 
 
 .services-sidebar-wrap {
-
   .services-flex-wrap {
-    margin-top: 20px;
     width: 100%;
   }
 
