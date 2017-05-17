@@ -50,8 +50,8 @@
 	<div class="container content-wrap team-page-container">
 
 		<div class="team-header text-center">
-			<h1><?php echo get_theme_mod('meet_team_header', 'Default team page header'); ?></h1>
-			<p><?php echo get_theme_mod('meet_team_paragraph', 'This is a default paragraph'); ?></p>
+			<h1><?php echo get_theme_mod('meet_team_header', 'Meet our team'); ?></h1>
+			<p><?php echo get_theme_mod('meet_team_paragraph', 'Each and every one of our members are qualified and ready to help identify and treat your problems'); ?></p>
 		</div>
 
 		<div class="members-grid-wrapper row">
