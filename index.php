@@ -1,17 +1,12 @@
-<?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+<?php get_header(); ?>
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
+  <!-- Caraousel-->
+  <?php get_template_part('/sections/section','carousel')?>
 
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+	<!-- News Section -->
+	<?php get_template_part('/sections/section', 'news'); ?>
+
+  <!-- Doctors Section -->
+  <?php get_template_part('/sections/section', 'team') ?>
+  
+<?php get_footer() ?>
