@@ -17,7 +17,8 @@ body, html {
   width: 100%; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-y: scroll; }
   body h1, body h2, body h3, body p, body li, body ul {
     margin: 0;
     padding: 0; }
@@ -62,8 +63,8 @@ body {
   .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover,
   .navbar-default .navbar-nav .active a:focus {
     background-color: transparent;
-    color: #2d3435;
-    border-bottom: 1px solid red;
+    color: #2c7756;
+    border-bottom: 1px solid #3D9970;
     padding: 15px 0;
     margin: 35px 15px 0; }
 

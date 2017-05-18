@@ -43,12 +43,10 @@
 	  			'img'  =>  get_template_directory_uri() . "/layout/images/dr-kao.jpg")
 	);
 
+	//Default link to a page with the title "Team";
+	$teampage = get_page_by_title( 'Team' )->ID ;
+
 ?>	
-
-
-<pre>
-	<?php var_dump($mods) ?>
-</pre>
 
 <div class="container content-wrap team-section">
 	<div class="intro-header text-center">
@@ -58,7 +56,7 @@
 	<div class="row">
 		<?php for ($i = 1; $i <= 4; $i++): ?>
 		<div class="section-member">
-			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link", '7')) ?>">
+			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link",  $teampage )) ?>">
 				<div class="link-wrap">
 					<img class="img-responsive" src="<?php echo get_theme_mod("team_members_number". $i . "_image", $default_teammembers[$i - 1]['img']); ?>">
 					<div class="member-box text-center">
@@ -70,9 +68,11 @@
 		</div>
 		<?php endfor; ?>
 	</div> <!-- END ROW -->
-
+	
 	<p class="meet-our-team-more text-center">
-		<a href="<?php echo get_page_link(7); ?>">Meet our team</a>
+		<a href="<?php echo get_page_link( $teampage ); ?>">Meet our team</a>
 	</p>
+
+	
 
 </div>
