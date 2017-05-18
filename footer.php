@@ -4,15 +4,7 @@
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="footer-nav-col col-xs-6 col-sm-3">
-						<h2 class="footer-title"><?php echo get_theme_mod("heading_title_1", "Menu") ?></h2>
-						<ul>
-							<li><?php echo get_theme_mod("footer_col_one_item1", "Login") ?></li>
-							<li><?php echo get_theme_mod("footer_col_one_item2_link", "User Registration") ?></li>
-							<li><?php echo get_theme_mod("footer_col_one_item3", "Make an Appointment") ?></li>
-							<li><?php echo get_theme_mod("footer_col_one_item4") ?></li>
-						</ul>	
-					</div>
+					<?php dynamic_sidebar('footer_bottom'); ?>
 					<div class="footer-nav-col col-xs-6 col-sm-3">
 						<h2 class="footer-title"><?php echo get_theme_mod("heading_title_2", "Clinics") ?></h2>	
 						<ul>

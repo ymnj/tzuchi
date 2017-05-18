@@ -45,6 +45,28 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
+
+/******************* WIDGET *******************/
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function footer_widget_init() {
+
+  register_sidebar( array(
+    'name'          => 'Footer Menu',
+    'id'            => 'footer_bottom',
+    'before_widget' => '<div class="footer-nav-col col-xs-6 col-sm-3">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="footer-title">',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'footer_widget_init' );
+
+
+
 /******************* CUSTOMIZER *******************/
 function create_customizer($wp_customize){
 

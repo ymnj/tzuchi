@@ -68,6 +68,24 @@ body {
     padding: 15px 0;
     margin: 35px 15px 0; }
 
+.dropdown {
+  position: relative; }
+
+.dropdown-menu {
+  min-width: 0;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  position: absolute; }
+
+.navbar-right .dropdown-menu {
+  left: 0; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+  .dropdown:hover .dropdown-menu a {
+    background-color: #fff; }
+
 /*************** CAROUSEL ***************/
 #main-carousel .carousel-inner {
   height: 500px; }
