@@ -48,31 +48,30 @@
 
 ?>	
 
-<div class="container content-wrap team-section">
-	<div class="intro-header text-center">
-		<h1><?php echo $team_general_title; ?></h1>
-		<p><?php echo $team_general_description; ?></p>
-	</div>
-	<div class="row">
-		<?php for ($i = 1; $i <= 4; $i++): ?>
-		<div class="section-member">
-			<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link",  $teampage )) ?>">
-				<div class="link-wrap">
-					<img class="img-responsive" src="<?php echo get_theme_mod("team_members_number". $i . "_image", $default_teammembers[$i - 1]['img']); ?>">
-					<div class="member-box text-center">
-						<h2 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", $default_teammembers[$i - 1]['name'] ); ?></h2>
-						<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training',  $default_teammembers[$i - 1]['edu'] ); ?></p>
-					</div>
-				</div>		<!-- END LINK WRAP -->
-			</a>
+<div class="content-wrap team-section">
+	<div class="container">
+		<div class="intro-header text-center">
+			<h1><?php echo $team_general_title; ?></h1>
+			<p><?php echo $team_general_description; ?></p>
 		</div>
-		<?php endfor; ?>
-	</div> <!-- END ROW -->
-	
-	<p class="meet-our-team-more text-center">
-		<a href="<?php echo get_page_link( $teampage ); ?>">Meet our team</a>
-	</p>
-
-	
-
+		<div class="row">
+			<?php for ($i = 1; $i <= 4; $i++): ?>
+			<div class="section-member">
+				<a href="<?php echo get_page_link(get_theme_mod("team_members_number" . $i . "_link",  $teampage )) ?>">
+					<div class="link-wrap">
+						<img class="img-responsive" src="<?php echo get_theme_mod("team_members_number". $i . "_image", $default_teammembers[$i - 1]['img']); ?>">
+						<div class="member-box text-center">
+							<h2 class="section-member-name"><?php echo get_theme_mod("team_members_number". $i . "_name", $default_teammembers[$i - 1]['name'] ); ?></h2>
+							<p class="section-member-training"><?php echo get_theme_mod('team_members_number' .  $i .'_training',  $default_teammembers[$i - 1]['edu'] ); ?></p>
+						</div>
+					</div>		<!-- END LINK WRAP -->
+				</a>
+			</div>
+			<?php endfor; ?>
+		</div> <!-- END ROW -->
+		
+		<p class="meet-our-team-more text-center">
+			<a href="<?php echo get_page_link( $teampage ); ?>">Meet our team</a>
+		</p>
+	</div>
 </div>

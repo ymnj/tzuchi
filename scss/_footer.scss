@@ -29,12 +29,36 @@
       margin-bottom: 8px;
       font-size: 0.9em;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+
   }
 
   //Menu Column
   .footer-nav-col:nth-child(1) {
-    
+    .sub-menu {
+      display: none;
+    }
+
+    .menu-item-has-children:hover {
+      .sub-menu {
+        padding-left: 20px;
+        padding-top: 5px;
+        display: block;
+
+        a:before {
+          content: '- '
+        }
+      }
+    }
   }
+
+
+
+
   //Clinic Column
   .footer-nav-col:nth-child(2){
     

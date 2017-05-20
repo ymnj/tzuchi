@@ -60,26 +60,21 @@ body {
 
 .navbar-default {
   border: none; }
-  .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover,
-  .navbar-default .navbar-nav .active a:focus {
-    background-color: transparent;
-    color: #2c7756;
-    border-bottom: 1px solid #3D9970;
-    padding: 15px 0;
-    margin: 35px 15px 0; }
 
 .dropdown {
   position: relative; }
 
-.dropdown-menu {
+.navbar-right .dropdown-menu {
+  right: auto;
+  text-align: left;
   min-width: 0;
   border: none;
   box-shadow: none;
-  text-align: center;
   position: absolute; }
-
-.navbar-right .dropdown-menu {
-  left: 0; }
+.navbar-right .dropdown-menu a {
+  color: #777; }
+.navbar-right .dropdown-menu a:hover {
+  color: #333; }
 
 .dropdown:hover .dropdown-menu {
   display: block; }
@@ -111,16 +106,12 @@ body {
 
 /*************** FRONT PAGE NEWS SECTION ***************/
 .news-section {
-  background-color: #fff;
-  border-bottom: 3px solid #3D9970; }
+  background-color: #fff; }
   .news-section h1, .news-section .services-sidebar-wrap h1 {
     display: inline;
     font-size: 2em;
     border-top: 5px solid #3D9970;
     border-bottom: 2px solid #3D9970; }
-
-.front-page-news {
-  max-height: 706px; }
 
 .front-page-news .post-img, .single-post-wrap .post-img {
   margin: 20px 0; }
@@ -142,6 +133,27 @@ body {
 .services-sidebar-wrap img {
   width: 100%;
   height: 706px; }
+
+/*************** FRONT PAGE STATS SECTION ***************/
+.stat-section {
+  position: relative; }
+  .stat-section .stat-title {
+    text-align: center;
+    text-transform: uppercase; }
+    .stat-section .stat-title h2 {
+      font-weight: 700; }
+
+.stat-section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./layout/images/stat-background.jpg") center fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1; }
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {
@@ -227,6 +239,16 @@ body {
     #footer .footer-nav-col li {
       margin-bottom: 8px;
       font-size: 0.9em; }
+    #footer .footer-nav-col a {
+      text-decoration: none; }
+  #footer .footer-nav-col:nth-child(1) .sub-menu {
+    display: none; }
+  #footer .footer-nav-col:nth-child(1) .menu-item-has-children:hover .sub-menu {
+    padding-left: 20px;
+    padding-top: 5px;
+    display: block; }
+    #footer .footer-nav-col:nth-child(1) .menu-item-has-children:hover .sub-menu a:before {
+      content: "- "; }
 
 #sub-footer {
   background-color: #404546;
