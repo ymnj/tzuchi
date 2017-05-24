@@ -106,27 +106,36 @@ body {
 
 /*************** FRONT PAGE NEWS SECTION ***************/
 .news-section {
-  background-color: #fff; }
+  background-color: #F2F2F2; }
   .news-section h1, .news-section .services-sidebar-wrap h1 {
     display: inline;
     font-size: 2em;
     border-top: 5px solid #3D9970;
     border-bottom: 2px solid #3D9970; }
 
-.front-page-news .post-img, .single-post-wrap .post-img {
-  margin: 20px 0; }
-  .front-page-news .post-img img, .single-post-wrap .post-img img {
+.front-page-news {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  padding: 0; }
+  .front-page-news .post-text-wrap {
+    padding: 20px 15px; }
+  .front-page-news h2 {
+    color: #000; }
+  .front-page-news .post-img img {
     width: 100%;
     max-height: 240px;
     object-fit: cover; }
-.front-page-news .post-content, .single-post-wrap .post-content {
-  margin-top: 20px;
-  line-height: 1.8em; }
-.front-page-news .read-full-post, .single-post-wrap .read-full-post {
-  margin-top: 5%; }
-  .front-page-news .read-full-post a, .single-post-wrap .read-full-post a {
-    padding: 10px 10px;
-    border: 1px solid black; }
+  .front-page-news .post-content {
+    margin-top: 20px;
+    line-height: 1.8em;
+    color: #3d3d3d; }
+  .front-page-news .read-full-post {
+    margin-top: 5%; }
+    .front-page-news .read-full-post a {
+      color: #E9E9E9;
+      background-color: #0e243c;
+      padding: 10px 15px;
+      border: 1px solid black; }
 
 .services-sidebar-wrap .services-flex-wrap {
   width: 100%; }
@@ -136,28 +145,30 @@ body {
 
 /*************** FRONT PAGE STATS SECTION ***************/
 .stat-section {
-  position: relative; }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("./layout/images/stat-background.jpg") center fixed no-repeat;
+  background-size: cover;
+  color: #f2f2f2; }
+  .stat-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .5; }
   .stat-section .stat-title {
     text-align: center;
     text-transform: uppercase; }
     .stat-section .stat-title h2 {
       font-weight: 700; }
 
-.stat-section:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("./layout/images/stat-background.jpg") center fixed;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  z-index: -1; }
-
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 .team-section {
-  background-color: #fff; }
+  background: url("./layout/images/pattern.png") repeat; }
   .team-section .intro-header {
     margin-bottom: 5%; }
     .team-section .intro-header p {
@@ -312,5 +323,8 @@ body {
     margin-top: 50px; }
     .services-sidebar-wrap .services-flex-wrap {
       margin: 20px auto 0; } }
+@media (min-width: 1200px) {
+  .front-page-news {
+    height: 706.06px; } }
 
 /*# sourceMappingURL=style.css.map */

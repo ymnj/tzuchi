@@ -10,7 +10,7 @@ $( document ).ready(function() {
     backgroundColor: 'none',
     foregroundColor:'#3498DB',
     replacePercentageByText: '',
-    fontColor: '#000',
+    fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
      $('#test-circle .timer').countTo({
@@ -28,7 +28,7 @@ $( document ).ready(function() {
     backgroundColor: 'none',
     foregroundColor:'#FF4136',
     replacePercentageByText: '',
-    fontColor: '#000',
+    fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
      $('#test-circle2 .timer').countTo({
@@ -46,7 +46,7 @@ $( document ).ready(function() {
     backgroundColor: 'none',
     foregroundColor:'#39CCCC',
     replacePercentageByText: '',
-    fontColor: '#000',
+    fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
      $('#test-circle3 .timer').countTo({

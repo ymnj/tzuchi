@@ -2,16 +2,11 @@
 <div class="content-wrap news-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-7 latest-post-wrap">
+			<article class="col-xs-12 col-md-7 front-page-news">
 				<?php 
 					$args = array( 'numberposts' => 1, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
 						$post_array = get_posts( $args );
 						foreach($post_array as $post) : ?>
-						
-						<header class="section-title text-center">
-							<h1>Latest News</h1>
-						</header>
-						<article class="front-page-news">
 							<figure class="post-img">
 								<?php if ( has_post_thumbnail() ) {
 								the_post_thumbnail();
@@ -20,19 +15,20 @@
 								<?php } ?>
 							</figure>
 
-							<header>
-								<h2><?php echo $post->post_title ?></h2>
-							</header>
-							<p class="post-date"><?php echo mysql2date('F j, Y', $post->post_date) ?></p>
-							<section>
-								<p class="post-content"><?php echo substr($post->post_content, 0, 1300) . "..." ?></p>
-							</section>
-							<p class="read-full-post text-center">
-								<a href="<?php the_permalink(); ?>">Read More</a>
-							</p>
-						</article>
+							<div class="post-text-wrap">
+								<header>
+									<h2><?php echo $post->post_title ?></h2>
+								</header>
+								<p class="post-date"><?php echo mysql2date('F j, Y', $post->post_date) ?></p>
+								<section>
+									<p class="post-content"><?php echo substr($post->post_content, 0, 1100) . "..." ?></p>
+								</section>
+								<p class="read-full-post text-center">
+									<a href="<?php the_permalink(); ?>">Read More</a>
+								</p>
+							</div>
 				<?php endforeach ?>
-			</div>
+			</article>
 			<div class="col-xs-12 col-xs-offset-0 
 									col-sm-8 col-sm-offset-2
 									col-md-5 col-md-offset-0 services-sidebar-wrap">

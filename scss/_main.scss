@@ -95,9 +95,7 @@
 /*************** FRONT PAGE NEWS SECTION ***************/
 
 .news-section {
-
-  background-color: #fff;
-  //border-bottom: 3px solid #3D9970;
+  background-color: #F2F2F2;
 
   h1, .services-sidebar-wrap h1 {
     display: inline;
@@ -108,13 +106,20 @@
 }
 
 .front-page-news {
-  //max-height: 706px;
-}
+  
+  background-color: #fff;
+  border: 1px solid #dadada;
+  padding: 0;
 
-.front-page-news, .single-post-wrap {
+  .post-text-wrap {
+    padding: 20px 15px;
+  }
+
+  h2{
+    color: #000;
+  }
 
   .post-img {
-    margin: 20px 0;
 
     img {
       width: 100%;
@@ -126,12 +131,15 @@
   .post-content {
     margin-top: 20px;
     line-height: 1.8em;
+    color: #3d3d3d;
   }
 
   .read-full-post  {
     margin-top: 5%;
-    a{
-      padding: 10px 10px;
+    a {
+      color: #E9E9E9;
+      background-color: #0e243c;
+      padding: 10px 15px;
       border: 1px solid black;
     }
   }
@@ -154,7 +162,23 @@
 
 
 .stat-section {
+  width: 100%;
+  height: 100%;
   position: relative;
+  background: url('./layout/images/stat-background.jpg') center fixed no-repeat;
+  background-size: cover;
+  color: #f2f2f2;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .5; 
+  }
 
   .stat-title {
     text-align: center;
@@ -164,34 +188,13 @@
       font-weight: 700;
     }
   }
-
 }
-
-.stat-section:after {
-   content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url('./layout/images/stat-background.jpg') center fixed;
-    width: 100%;
-    height: 100%;
-    opacity : 0.6;
-    z-index: -1;
-}
-
-
-
-
-
-
-
 
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
 
 .team-section {
-  background-color: #fff;
+   background: url('./layout/images/pattern.png') repeat;
 
   .intro-header {
     margin-bottom: 5%;
