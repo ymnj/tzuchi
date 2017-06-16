@@ -89,9 +89,32 @@ require_once get_template_directory() . '/inc/customizer/panels/footer_panel_cus
 require_once get_template_directory() . '/inc/customizer/panels/carousel_panel_cust.php';
 }
 
-
-
 add_action( 'customize_register', 'create_customizer');
 
 
+/******************* POSTS *******************/
+
+//Excerpt function
+function get_excerpt($limit, $source = null){
+
+    if($source == "content" ? ($excerpt = get_the_content()) : ($excerpt = get_the_excerpt()));
+    $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $limit);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    $excerpt = $excerpt.'... <a href="'.get_permalink($post->ID).'">more</a>';
+    return $excerpt;
+}
+
+
+
+
+
+
+
+
 ?>
+
+

@@ -1,3 +1,7 @@
+
+$green-text: #2cc895;
+
+
 /*************** NAVIGATION ***************/
 .navbar {
   height: 120px;
@@ -24,6 +28,14 @@
 
 .navbar-default {
   border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  .navbar-nav > .active > a, .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: $green-text; 
+  }
 }
 
 .dropdown {
@@ -42,6 +54,7 @@
 
   .dropdown-menu a {
     color: #777;
+    font-weight: bold;
   }
 
   .dropdown-menu  a:hover {
@@ -88,7 +101,9 @@
 
 /*************** DEFAULT PAGE ***************/
 .default-page-container {
-  min-height: 100%;
+  h1 {
+    margin-bottom: 5%;
+  }
 }
 
 

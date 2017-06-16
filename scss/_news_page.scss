@@ -1,0 +1,31 @@
+
+.news-page-container {
+  .post-date {
+    margin: 2.5% 0;
+    color: $green-text;
+    text-transform: uppercase;
+  }
+
+  .post-title a{
+    color: #000;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .post-excerpt {
+    margin: 2.5% 0;
+  }
+  
+  .post-footer {
+    margin-bottom: 7.5%;
+
+    span:first-of-type {
+      margin-right: 2.5%;
+    }
+
+    span:nth-of-type(-n+2) {
+      font-style: italic;
+    }
+  }
+}
