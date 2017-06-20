@@ -1,5 +1,12 @@
 
 .news-page-container {
+
+  .post-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
   .post-date {
     margin: 2.5% 0;
     color: $green-text;
@@ -15,17 +22,39 @@
 
   .post-excerpt {
     margin: 2.5% 0;
+    color: $post-text;
   }
   
   .post-footer {
     margin-bottom: 7.5%;
+    width: 100%;
 
     span:first-of-type {
       margin-right: 2.5%;
+      color: $post-text;
     }
 
-    span:nth-of-type(-n+2) {
+    span:nth-of-type(2) {
       font-style: italic;
+      color: $green-text;
     }
+
+    span:nth-of-type(3) {
+      font-style: italic;
+      padding-left: 5px;
+    }
+    
+    a {
+      color: $post-text;
+
+      &:nth-of-type(2) {
+       float: right;
+       text-transform: uppercase;
+       font-weight: bold;
+       color: $green-text;
+       border-bottom: 2px solid $green-text;
+      }
+    }
+    
   }
 }
