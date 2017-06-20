@@ -10,13 +10,18 @@
   <div class="container content-wrap news-page-container">
     <div class="row">
       <?php 
-      	$args = array( 'posts_per_page' => 3 );
+
+      	$currentPage = get_query_var("paged");
+
+      	$args = array( 'post_type' => 'post',
+      								 'posts_per_page' => 1,
+      								 'paged' => $currentPage
+      								);
+
 				// the query
 				$the_query = new WP_Query( $args ); ?>
 
 				<?php if ( $the_query->have_posts() ) : ?>
-
-					<!-- pagination here -->
 
 					<!-- the loop -->
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -32,19 +37,27 @@
 
           		<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
           		<p class="post-excerpt"><?php echo get_excerpt(120); ?></p>
-            <div class="post-footer">
-              <span><?php the_author(); ?></span>
-              <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-              <a href="<?php the_permalink(); ?>"><?php echo comments_number('No comment(s)
-'); ?></a>
-							<a href=<?php echo get_permalink($post->ID) ?>>Read More</a>
-            </div>
+	            <div class="post-footer">
+	              <span><?php the_author(); ?></span>
+	              <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+	              <a href="<?php the_permalink(); ?>"><?php echo comments_number('No comment(s)'); ?></a>
+								<a href=<?php echo get_permalink($post->ID) ?>>Read More</a>
+	            </div>
 						</div> <!-- END COL -->
-					<?php endwhile; ?>
-					<!-- end of the loop -->
-
+						
+					<?php endwhile; ?><!-- end of the loop -->
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="posts-pag text-center">
+							<?php 
+							echo paginate_links(array(
+								'total' 		=> $the_query->max_num_pages,
+								'prev_text' => __('Newer'),
+								'next_text' => __('Older'),
+							));
+							?>
+						</div>
+					</div>
 					<!-- pagination here -->
-
 					<?php wp_reset_postdata(); ?>
 
 				<?php else : ?>

@@ -54,7 +54,32 @@
        color: $green-text;
        border-bottom: 2px solid $green-text;
       }
+    } 
+  }
+
+  .posts-pag {
+    font-size: 18px;
+
+    a {
+      color: #000;
+
+      &.prev.page-numbers:before {
+        content: '<\00a0\00a0\00a0';
+      }
+
+      &.next.page-numbers:after {
+        content: '\00a0\00a0\00a0>';
+      }
     }
-    
+
+    a.page-numbers {
+     padding: 0 5px; 
+    }
+
+    .current {
+      font-weight: bold;
+      color: $green-text;
+      border-bottom: 2px solid $green-text;
+    }
   }
 }

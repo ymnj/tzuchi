@@ -309,6 +309,20 @@ body {
       font-weight: bold;
       color: #2cc895;
       border-bottom: 2px solid #2cc895; }
+.news-page-container .posts-pag {
+  font-size: 18px; }
+  .news-page-container .posts-pag a {
+    color: #000; }
+    .news-page-container .posts-pag a.prev.page-numbers:before {
+      content: '<\00a0\00a0\00a0'; }
+    .news-page-container .posts-pag a.next.page-numbers:after {
+      content: '\00a0\00a0\00a0>'; }
+  .news-page-container .posts-pag a.page-numbers {
+    padding: 0 5px; }
+  .news-page-container .posts-pag .current {
+    font-weight: bold;
+    color: #2cc895;
+    border-bottom: 2px solid #2cc895; }
 
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 400px) {
