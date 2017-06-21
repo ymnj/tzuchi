@@ -55,6 +55,10 @@ body {
 	padding-top: 5%;
 	padding-bottom: 7%;
 
+	h1 {
+		margin-bottom: 5%;
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -146,6 +150,13 @@ body {
 		}
 	}
 
+	.default-page-container {
+
+	  .um, .um-form {
+	    margin-left: 0;
+	  }
+	}
+
 	.footer-nav-col {
 		height: 180px;
 	}
@@ -157,8 +168,6 @@ body {
 
   #footer .footer-title {
 		font-size: 0.9em;
-		//border-bottom: none;
-		//padding-bottom: 0;
 		padding-top: 15px;
 	}
 
@@ -177,6 +186,7 @@ body {
 			margin: 20px auto 0;
 		}
 	}
+
 }
 
 @media (min-width: 1200px) {

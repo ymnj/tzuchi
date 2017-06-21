@@ -1,10 +1,8 @@
 
-$green-text: #2cc895;
-
 
 /*************** NAVIGATION ***************/
 .navbar {
-  height: 120px;
+  height: 125px;
   margin-bottom: 0;
   background-color: #fff;
   z-index: 99999;
@@ -14,7 +12,7 @@ $green-text: #2cc895;
   }
 
   .navbar-nav>li>a {
-    margin-top: 35px;
+    margin-top: 37.5px;
   }
 
   .navbar-brand {
@@ -55,6 +53,7 @@ $green-text: #2cc895;
   .dropdown-menu a {
     color: #777;
     font-weight: bold;
+    padding: 3px 15px;
   }
 
   .dropdown-menu  a:hover {
@@ -101,8 +100,18 @@ $green-text: #2cc895;
 
 /*************** DEFAULT PAGE ***************/
 .default-page-container {
-  h1 {
-    margin-bottom: 5%;
+
+  .um, .um-form {
+   //opacity: 1 !important;
+    margin-left: 50px;
+  }
+
+  .default-page-title {
+    text-align: center;
+  }
+
+  .default-page-content {
+    
   }
 }
 
