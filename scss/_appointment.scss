@@ -1,0 +1,16 @@
+.appointment-page-container {
+  .um, .um-form, {
+   //opacity: 1 !important;
+    margin-left: 50px;
+  }
+
+  .appointment-page-title {
+    text-align: center;
+  }
+
+  .ea-bootstrap {
+    // Using !important to override inline style forced by Easy Appointments. The default sets
+    // a max-width in the body panel of the page settings.
+    max-width: 100% !important;
+  }
+}

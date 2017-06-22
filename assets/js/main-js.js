@@ -1,7 +1,7 @@
 
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
-  $("#test-circle").circliful({
+  jQuery("#test-circle").circliful({
     animateInView: true,
     animationStep: 13,
     noPercentageSign: true,
@@ -13,13 +13,13 @@ $( document ).ready(function() {
     fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
-     $('#test-circle .timer').countTo({
+     jQuery('#test-circle .timer').countTo({
       from: 0, 
       to: 3,
       speed: 500
     });
   });
-  $("#test-circle2").circliful({
+  jQuery("#test-circle2").circliful({
     animateInView: true,
     animationStep: 9,
     noPercentageSign: true,
@@ -31,13 +31,13 @@ $( document ).ready(function() {
     fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
-     $('#test-circle2 .timer').countTo({
+     jQuery('#test-circle2 .timer').countTo({
       from: 0, 
       to: 50,
       speed: 1000
     });
   });
-  $("#test-circle3").circliful({
+  jQuery("#test-circle3").circliful({
     animateInView: true,
     animationStep: 7,
     noPercentageSign: true,
@@ -49,7 +49,7 @@ $( document ).ready(function() {
     fontColor: '#f2f2f2',
     percentageY: 105
   }, function(){
-     $('#test-circle3 .timer').countTo({
+     jQuery('#test-circle3 .timer').countTo({
       from: 0, 
       to: 200,
       speed: 1200

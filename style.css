@@ -110,9 +110,31 @@ body {
   -o-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out; }
 
+/*************** Appointment CTA ***************/
+.cta-section {
+  background-color: #F2F2F2;
+  padding: 5% 0 0; }
+  .cta-section .appointment-cta {
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    .cta-section .appointment-cta a {
+      border-radius: 10px;
+      background-color: #2d3435;
+      color: #fff;
+      padding: 10px 20px;
+      border: 1px solid black;
+      font-size: 24px;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -ms-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+      .cta-section .appointment-cta a:hover {
+        background-color: #2cc895;
+        color: #000; }
+
 /*************** DEFAULT PAGE ***************/
-.default-page-container .um, .default-page-container .um-form {
-  margin-left: 50px; }
 .default-page-container .default-page-title {
   text-align: center; }
 
@@ -322,6 +344,13 @@ body {
     font-weight: bold;
     color: #2cc895;
     border-bottom: 2px solid #2cc895; }
+
+.appointment-page-container .um, .appointment-page-container .um-form {
+  margin-left: 50px; }
+.appointment-page-container .appointment-page-title {
+  text-align: center; }
+.appointment-page-container .ea-bootstrap {
+  max-width: 100% !important; }
 
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 400px) {

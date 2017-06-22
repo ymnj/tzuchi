@@ -16,7 +16,7 @@ get_header(); ?>
     if( have_posts() ):
       while( have_posts() ): the_post(); ?>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-8 col-sm-offset-2">
           <?php the_title( '<h1 class="default-page-title">', '</h1>' ); ?> 
           <div class="default-page-content">
            <p><?php the_content()?></p>

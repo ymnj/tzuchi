@@ -15,6 +15,15 @@ This theme, like WordPress, is licensed under the GPL.
 
 $green-text: #2cc895;
 $post-text: #777;
+$dark-grey: #2d3435;
+
+@mixin hover-transition($prop, $time) {
+	-webkit-transition: $prop $time ease-in-out;
+  -moz-transition: $prop $time ease-in-out;
+  -ms-transition: $prop $time ease-in-out;
+  -o-transition: $prop $time ease-in-out;
+  transition: $prop $time ease-in-out;
+}
 
 
 body, html {
@@ -71,6 +80,7 @@ body {
 @import 'single_member';
 @import 'footer';
 @import 'news_page';
+@import 'appointment';
 
 
 
@@ -151,7 +161,6 @@ body {
 	}
 
 	.default-page-container {
-
 	  .um, .um-form {
 	    margin-left: 0;
 	  }
