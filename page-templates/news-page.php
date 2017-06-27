@@ -14,7 +14,7 @@
       	$currentPage = get_query_var("paged");
 
       	$args = array( 'post_type' => 'post',
-      								 'posts_per_page' => 1,
+      								 'posts_per_page' => 5,
       								 'paged' => $currentPage
       								);
 

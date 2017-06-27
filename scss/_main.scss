@@ -120,31 +120,6 @@
       border-bottom: 1px solid black;
     }
   }
-
-  // background-color: #F2F2F2;
-  // width: 100%;
-  // padding: 5% 0 0;
-
-  // .appointment-cta {
-  //   align-items: center;
-  //   justify-content: center;
-  //   display: flex;
-
-  //   a {
-  //     border-radius: 10px;
-  //     color: #0099cc;
-  //     padding: 10px 40px;
-  //     border: 1px solid black;
-  //     font-size: 20px;
-  //     font-weight: bold;
-  //     @include hover-transition(all, 300ms);
-
-  //     &:hover {
-  //       background-color: $green-text;
-  //       color: #fff;
-  //     }
-  //   }
-  // }
 }
 
 
@@ -173,7 +148,7 @@
 }
 
 .front-page-news {
-  
+  position: relative;
   background-color: #fff;
   border: 1px solid #dadada;
   padding: 0;
@@ -182,16 +157,10 @@
     padding: 20px 15px;
   }
 
-  h2{
-    color: #000;
-  }
-
   .post-img {
 
     img {
-      width: 100%;
-      max-height: 240px;
-      object-fit: cover;
+      max-height: 300px;
     }
   }
 
@@ -202,12 +171,14 @@
   }
 
   .read-full-post  {
-    margin-top: 5%;
+    //margin-top: 5%;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+
     a {
-      color: #E9E9E9;
-      background-color: #0e243c;
-      padding: 10px 15px;
-      border: 1px solid black;
+      @include article-more;
     }
   }
 }
@@ -314,9 +285,7 @@
     margin-top: 5%;
 
     a {
-      color: #0099cc;
-      padding: 10px 10px;
-      border: 1px solid black;
+      @include article-more;
     }
   }
 }

@@ -25,6 +25,14 @@ $dark-grey: #2d3435;
   transition: $prop $time ease-in-out;
 }
 
+@mixin article-more {
+	color: #E9E9E9;
+  background-color: #0e243c;
+  padding: 10px 15px;
+  border: 1px solid black;
+}
+
+
 
 body, html {
 	height: 100vh;
@@ -63,6 +71,7 @@ body {
 	flex: 1;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	color: #777;
 
 	h1 {
 		margin-bottom: 5%;

@@ -1,6 +1,5 @@
 
-.news-page-container {
-
+.news-page-container, .front-page-news, .single-post-wrap {
   .post-img img {
     width: 100%;
     height: auto;
@@ -13,16 +12,19 @@
     text-transform: uppercase;
   }
 
+  .post-excerpt, .post-content {
+    margin: 2.5% 0;
+  }
+}
+
+
+.news-page-container {
+
   .post-title a{
     color: #000;
     font-size: 0.9em;
     text-transform: capitalize;
     font-weight: bold;
-  }
-
-  .post-excerpt {
-    margin: 2.5% 0;
-    color: $post-text;
   }
   
   .post-footer {

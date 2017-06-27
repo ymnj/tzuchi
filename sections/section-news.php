@@ -16,12 +16,12 @@
 							</figure>
 
 							<div class="post-text-wrap">
-								<header>
-									<h2><?php echo $post->post_title ?></h2>
-								</header>
 								<p class="post-date"><?php echo mysql2date('F j, Y', $post->post_date) ?></p>
+								<header>
+									<h2 class="post-title"><?php echo $post->post_title ?></h2>
+								</header>
 								<section>
-									<p class="post-content"><?php echo substr($post->post_content, 0, 1100) . "..." ?></p>
+									<p class="post-content"><?php echo substr($post->post_content, 0, 850) . "..." ?></p>
 								</section>
 								<p class="read-full-post text-center">
 									<a href="<?php the_permalink(); ?>">Read More</a>

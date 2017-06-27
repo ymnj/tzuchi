@@ -39,7 +39,8 @@ body {
 .content-wrap {
   flex: 1;
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  color: #777; }
   .content-wrap h1 {
     margin-bottom: 5%; }
   .content-wrap a {
@@ -145,23 +146,23 @@ body {
     border-bottom: 2px solid #3D9970; }
 
 .front-page-news {
+  position: relative;
   background-color: #fff;
   border: 1px solid #dadada;
   padding: 0; }
   .front-page-news .post-text-wrap {
     padding: 20px 15px; }
-  .front-page-news h2 {
-    color: #000; }
   .front-page-news .post-img img {
-    width: 100%;
-    max-height: 240px;
-    object-fit: cover; }
+    max-height: 300px; }
   .front-page-news .post-content {
     margin-top: 20px;
     line-height: 1.8em;
     color: #3d3d3d; }
   .front-page-news .read-full-post {
-    margin-top: 5%; }
+    bottom: -7px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute; }
     .front-page-news .read-full-post a {
       color: #E9E9E9;
       background-color: #0e243c;
@@ -232,11 +233,53 @@ body {
   .team-section .meet-our-team-more {
     margin-top: 5%; }
     .team-section .meet-our-team-more a {
-      color: #0099cc;
-      padding: 10px 10px;
+      color: #E9E9E9;
+      background-color: #0e243c;
+      padding: 10px 15px;
       border: 1px solid black; }
 
 /*************** SINGLE POST ***************/
+.single-post-wrap .post-title {
+  color: #000;
+  font-size: 27px;
+  text-transform: capitalize;
+  font-weight: bold; }
+.single-post-wrap .comment-notes, .single-post-wrap input, .single-post-wrap .comment-form-field {
+  margin: 2.5% 0; }
+.single-post-wrap .comment-form-field {
+  background-color: salmon; }
+  .single-post-wrap .comment-form-field #comment {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    vertical-align: bottom; }
+.single-post-wrap .comment-form-author, .single-post-wrap .comment-form-email, .single-post-wrap .comment-form-field {
+  position: relative; }
+  .single-post-wrap .comment-form-author i.glyphicon, .single-post-wrap .comment-form-email i.glyphicon, .single-post-wrap .comment-form-field i.glyphicon {
+    position: absolute;
+    font-size: 24px;
+    left: 12px; }
+  .single-post-wrap .comment-form-author input, .single-post-wrap .comment-form-author textarea, .single-post-wrap .comment-form-email input, .single-post-wrap .comment-form-email textarea, .single-post-wrap .comment-form-field input, .single-post-wrap .comment-form-field textarea {
+    padding-left: 50px;
+    padding-right: 12px;
+    width: 100%; }
+    .single-post-wrap .comment-form-author input::placeholder, .single-post-wrap .comment-form-author textarea::placeholder, .single-post-wrap .comment-form-email input::placeholder, .single-post-wrap .comment-form-email textarea::placeholder, .single-post-wrap .comment-form-field input::placeholder, .single-post-wrap .comment-form-field textarea::placeholder {
+      text-transform: uppercase; }
+.single-post-wrap .comment-form-author i.glyphicon, .single-post-wrap .comment-form-email i.glyphicon {
+  top: 50%;
+  margin-top: -12px; }
+.single-post-wrap .comment-form-author input, .single-post-wrap .comment-form-email input {
+  height: 50px; }
+.single-post-wrap .comment-form-field i.glyphicon {
+  top: 12px; }
+.single-post-wrap .comment-form-field textarea {
+  padding-top: 12px; }
+.single-post-wrap .form-submit input {
+  color: #E9E9E9;
+  background-color: #0e243c;
+  padding: 10px 15px;
+  border: 1px solid black; }
+
 /*************** FULL TEAM MEMBERS SECTION ***************/
 .team-page-container .members-grid-wrapper .single-member {
   padding: 10px; }
@@ -292,22 +335,22 @@ body {
   color: grey;
   padding: 20px 0; }
 
-.news-page-container .post-img img {
+.news-page-container .post-img img, .front-page-news .post-img img, .single-post-wrap .post-img img {
   width: 100%;
   height: auto;
   object-fit: cover; }
-.news-page-container .post-date {
+.news-page-container .post-date, .front-page-news .post-date, .single-post-wrap .post-date {
   margin: 2.5% 0;
   color: #2cc895;
   text-transform: uppercase; }
+.news-page-container .post-excerpt, .news-page-container .post-content, .front-page-news .post-excerpt, .front-page-news .post-content, .single-post-wrap .post-excerpt, .single-post-wrap .post-content {
+  margin: 2.5% 0; }
+
 .news-page-container .post-title a {
   color: #000;
   font-size: 0.9em;
   text-transform: capitalize;
   font-weight: bold; }
-.news-page-container .post-excerpt {
-  margin: 2.5% 0;
-  color: #777; }
 .news-page-container .post-footer {
   margin-bottom: 7.5%;
   width: 100%; }

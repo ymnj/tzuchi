@@ -1,8 +1,74 @@
 /*************** SINGLE POST ***************/
 
-.single-post-container {
-  
 
-  .single-post-wrap {
+.single-post-wrap {
+
+  .post-title {
+    color: #000;
+    font-size: 27px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .comment-notes, input, .comment-form-field {
+    margin: 2.5% 0;
+  }
+
+  .comment-form-field {
+    background-color: salmon;
+
+    #comment {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      vertical-align: bottom;
+    }
+  }
+
+  .comment-form-author, .comment-form-email, .comment-form-field {
+    position: relative;
+
+    i.glyphicon {
+      position: absolute;
+      font-size: 24px;
+      left: 12px;
+    }
+
+    input, textarea {
+      &::placeholder {
+        text-transform: uppercase;
+      }
+      padding-left: 50px;
+      padding-right: 12px;
+      width: 100%;
+    }
+  }
+
+  .comment-form-author, .comment-form-email {
+    i.glyphicon {
+      top: 50%;
+      margin-top: -12px;
+    }
+
+    input {
+      height: 50px;
+    }
+  }
+
+  .comment-form-field {
+    i.glyphicon {
+      top: 12px;
+    }
+
+    textarea {
+      padding-top: 12px;
+    }
+  }
+
+  .form-submit {
+    input {
+      @include article-more
+    }
   }
 }
+
