@@ -2,13 +2,27 @@
   
     //width: 100%;
    // background-color: red;
-  
-
+  .locations-page-content .row{
+    margin: 2.5% 0; 
+  }
+ 
   .address-col {
-    //background-color: steelblue;
+    padding-bottom: 2.5%;
+
+    h3 {
+      
+      float: left;
+    }
   }
 
   .map-col {
-   //background-color: salmon;
+
+    iframe {
+      width:  100%;
+      height: auto;
+    }
+
+   // background-color: salmon;
+  
   }
 }

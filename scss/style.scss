@@ -105,6 +105,11 @@ body {
 	}
 }
 
+@media (min-width: 768px){
+	.locations-page-container .map-col iframe {
+		height: 450px;
+	}
+}
 
 @media (max-width: 768px) {
 
@@ -194,6 +199,10 @@ body {
 	#sub-footer {
 		font-size: 80%;
 	}
+
+	.locations-page-container .map-col iframe {
+		height: 250px;
+	}
 } // END 768px MEDIA
 
 
@@ -205,12 +214,18 @@ body {
 			margin: 20px auto 0;
 		}
 	}
-
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 994px){
 
 	.front-page-news {
 		height: 706.06px;
 	}
 }
+
+// @media (min-width: 1200px) {
+
+// 	.front-page-news {
+// 		height: 706.06px;
+// 	}
+// }
