@@ -20,8 +20,8 @@
 								<header>
 									<h2 class="post-title"><?php echo $post->post_title ?></h2>
 								</header>
-								<section>
-									<p class="post-content"><?php echo substr($post->post_content, 0, 850) . "..." ?></p>
+								<section class="post-content">
+									<?php echo substr($post->post_content, 0, 850); ?>
 								</section>
 								<p class="read-full-post text-center">
 									<a href="<?php the_permalink(); ?>">Read More</a>

@@ -33,9 +33,11 @@
 		            <img src="<?php bloginfo('template_directory'); ?>/assets/images/default_featured_image.png" alt="<?php the_title(); ?>" />
 		            <?php } ?>
 		          </figure>
-							<?php the_date( 'F j, Y', '<p class="post-date">', '</p>', true ); ?>
+
+              <p class="post-date"><?php the_time('F j, Y'); ?></p>
 
           		<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
           		<p class="post-excerpt"><?php echo get_excerpt(120); ?></p>
 	            <div class="post-footer">
 	              <span><?php the_author(); ?></span>

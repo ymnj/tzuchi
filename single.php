@@ -24,12 +24,12 @@
             <h2 class="post-title"><?php echo $post->post_name ?></h2>
           </header>
           <section>
-            <p class="post-content"><?php echo $post->post_content ?></p>
+            <p class="post-content"><?php echo the_content(); ?></p>
           </section>
          
           <!-- If comments are open or we have at least one comment, load up the comment template. -->
           <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-6">
+            <div class="col-xs-12">
               <?php if ( comments_open() || get_comments_number() ) :
                comments_template();
            endif;

@@ -8,7 +8,6 @@ add_action( 'after_switch_theme', 'reset_mytheme_options' );
 
 add_theme_support( 'post-thumbnails' );
 
-
 /******************* ASSETS *******************/
 
 function remove_admin_login_header() {
