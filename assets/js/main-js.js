@@ -1,6 +1,8 @@
 
 jQuery( document ).ready(function() {
 
+
+  // Front page circle stats
   jQuery("#test-circle").circliful({
     animateInView: true,
     animationStep: 13,
@@ -55,6 +57,22 @@ jQuery( document ).ready(function() {
       speed: 1200
     });
   });
+
+
+  //Front page 4 doctors section
+
+  window.sr = ScrollReveal();
+  memberSectionOptions = {
+    duration: 500,
+    origin: 'left',
+    distance: '20px',
+    scale: 1,
+    easing: 'ease',
+    reset: false
+  }
+
+  sr.reveal('.team-section .intro-header', {viewFactor: 1});
+  sr.reveal('.section-member', memberSectionOptions, 300);
 
 });
 

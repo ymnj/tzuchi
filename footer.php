@@ -1,6 +1,6 @@
 
 	<div class="footer-container">
-	
+
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
@@ -8,10 +8,10 @@
 					<div class="footer-nav-col col-xs-6 col-sm-3">
 						<h2 class="footer-title"><?php echo get_theme_mod("heading_title_2", "Clinics") ?></h2>	
 						<ul>
-							<li><a href=""><?php echo get_theme_mod("footer_col_two_item1", "Raven Song Community Health Centre") ?></a></li>
-							<li><a href=""><?php echo get_theme_mod("footer_col_two_item2", "Sumas First Nation Health Centre") ?></a></li>
-							<li><a href=""><?php echo get_theme_mod("footer_col_two_item3", "Helping Spirit Lodge Society") ?></a></li>
-							<li><a href=""><?php echo get_theme_mod("footer_col_two_item4") ?></a></li>
+							<li><a href=<?php echo get_theme_mod('footer_col_two_item1_link', get_site_url() . '/locations' ) ?>><?php echo get_theme_mod("footer_col_two_item1", "Raven Song Community Health Centre") ?></a></li>
+							<li><a href=<?php echo get_theme_mod('footer_col_two_item1_link', get_site_url() . '/locations' ) ?>><?php echo get_theme_mod("footer_col_two_item2", "Sumas First Nation Health Centre") ?></a></li>
+							<li><a href=<?php echo get_theme_mod('footer_col_two_item1_link', get_site_url() . '/locations' ) ?>><?php echo get_theme_mod("footer_col_two_item3", "Helping Spirit Lodge Society") ?></a></li>
+							<li><a href=<?php echo get_theme_mod('footer_col_two_item1_link', get_site_url() . '/locations' ) ?>><?php echo get_theme_mod("footer_col_two_item4") ?></a></li>
 						</ul>	
 					</div>
 					<div class="footer-nav-col col-xs-6 col-sm-3">

@@ -34,6 +34,8 @@ function main_assets(){
   
   wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/main-js.js', array( 'jquery' ), NULL, true );
 
+  wp_enqueue_script('scrollreveal.min', get_template_directory_uri() . '/assets/js/scrollreveal.min.js', array(), NULL, true  );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'main_assets' );
