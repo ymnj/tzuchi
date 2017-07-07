@@ -13,10 +13,16 @@
 			while( have_posts() ): the_post(); ?>
 		
 			<div class="row">
-				<div class="col-sm-3">
-				<?php the_post_thumbnail('large', ['class' => 'doctor-profile-image img-responsive']); ?>
+				<div class="col-sm-12 col-md-3">
+					<figure>
+            <?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail();
+            } else { ?>
+            <img class="doctor-profile-image" src="<?php bloginfo('template_directory'); ?>/assets/images/member_default.jpg" alt="<?php the_title(); ?>" />
+            <?php } ?>
+			    </figure>
 				</div>
-				<div class="col-sm-9">
+				<div class="col-sm-12 col-md-9">
 					<?php the_title( '<h1 class="doctor-name-header">', '</h1>' ); ?>	
 					<div class="doctor-bio">
 						<?php the_content()?>		

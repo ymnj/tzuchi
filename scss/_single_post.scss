@@ -4,14 +4,15 @@
 .single-post-wrap {
 
   .post-title {
+    font-size: 1.2rem;
     color: #000;
-    font-size: 27px;
     text-transform: capitalize;
     font-weight: bold;
   }
 
   section p {
     margin-bottom: 10px;
+    font-size: 1rem;
   }
 
   .comment-notes, input, .comment-form-field {
@@ -20,6 +21,7 @@
 
   #comments {
     margin-top: 2.5%;
+    font-size: 0.9rem;
   }
 
   .comment-form-field {
@@ -36,7 +38,6 @@
 
     i.glyphicon {
       position: absolute;
-      font-size: 24px;
       left: 12px;
     }
 
@@ -79,12 +80,12 @@
 
   .comments-area {
     border-top: 2px solid $green-text;
-    //padding-top: 2.5%;
   }
 
   .comments-title, .comment-reply-title {
     margin: 2.5% 0;
     text-align: center;
+    font-size: 1.5rem;
   }
 
   span.says {
@@ -119,15 +120,6 @@
       margin-bottom: 2.5%;
       float: right;
       color: $green-text;
-    }
-  }
-
-  ol.children {
-    .comment-meta {
-    margin-top: -40px;
-    }
-    .comment-awaiting-moderation {
-  
     }
   }
 

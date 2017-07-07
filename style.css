@@ -14,7 +14,8 @@ This theme, like WordPress, is licensed under the GPL.
 */
 body, html {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  font-size: 16px; }
 
 body {
   background-color: #fff;
@@ -64,8 +65,7 @@ body {
 .navbar-default {
   border: none;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 18px; }
+  text-transform: uppercase; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
     background-color: transparent;
     color: #2cc895; }
@@ -113,35 +113,35 @@ body {
 
 /*************** Appointment CTA ***************/
 .cta-section {
-  height: 500px;
+  max-height: 500px;
   background-color: #60AAC3;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .cta-section img {
-    width: 400px;
+    max-width: 400px;
     height: auto; }
   .cta-section p {
+    font-size: 1.87rem;
     padding-top: 50px;
-    font-size: 30px;
-    letter-spacing: 2px;
     text-transform: capitalize; }
     .cta-section p span {
-      font-size: 45px;
+      font-size: 2.8rem;
       font-weight: bold;
       color: #fff;
       border-bottom: 1px solid black; }
 
 /*************** DEFAULT PAGE ***************/
-.default-page-container .default-page-title {
-  text-align: center; }
+.default-page-container {
+  font-size: 1rem; }
+  .default-page-container .default-page-title {
+    text-align: center; }
 
 /*************** FRONT PAGE NEWS SECTION ***************/
 .news-section {
   background-color: #F2F2F2; }
   .news-section h1, .news-section .services-sidebar-wrap h1 {
     display: inline;
-    font-size: 2em;
     border-top: 5px solid #3D9970;
     border-bottom: 2px solid #3D9970; }
 
@@ -151,7 +151,14 @@ body {
   border: 1px solid #dadada;
   padding: 0; }
   .front-page-news .post-text-wrap {
+    font-size: 1rem;
     padding: 20px 15px; }
+  .front-page-news .post-title {
+    color: #000;
+    font-size: 1.5rem; }
+  .front-page-news p {
+    margin-bottom: 10px;
+    line-height: 21px; }
   .front-page-news .post-img img {
     max-height: 300px; }
   .front-page-news .post-content {
@@ -162,6 +169,7 @@ body {
     bottom: -7px;
     left: 50%;
     margin-left: -50px;
+    margin-bottom: 0;
     position: absolute; }
     .front-page-news .read-full-post a {
       color: #E9E9E9;
@@ -196,6 +204,7 @@ body {
     text-align: center;
     text-transform: uppercase; }
     .stat-section .stat-title h2 {
+      font-size: 1.87rem;
       font-weight: 700; }
 
 /*************** FRONT PAGE TEAM MEMBERS SECTION ***************/
@@ -203,7 +212,10 @@ body {
   background: url("./layout/images/pattern.png") repeat; }
   .team-section .intro-header {
     margin-bottom: 5%; }
+    .team-section .intro-header h1 {
+      font-size: 2rem; }
     .team-section .intro-header p {
+      font-size: 1rem;
       margin-top: 5%; }
   .team-section .row {
     display: flex;
@@ -218,18 +230,15 @@ body {
       display: block;
       object-fit: cover; }
     .team-section .section-member .member-box {
-      background-color: #fff;
       color: #000;
       padding: 15px 0; }
       .team-section .section-member .member-box .section-member-name, .team-section .section-member .member-box .member-name {
-        font-size: 20px;
         margin-bottom: 5%; }
-      .team-section .section-member .member-box .member-name {
-        font-size: 1em; }
+      .team-section .section-member .member-box .section-member-name {
+        font-size: 1.125rem; }
       .team-section .section-member .member-box .section-member-training {
-        font-size: 0.9em;
-        white-space: nowrap;
-        overflow: hidden; }
+        font-size: 0.9rem;
+        color: #2d3435; }
   .team-section .meet-our-team-more {
     margin-top: 5%; }
     .team-section .meet-our-team-more a {
@@ -240,16 +249,18 @@ body {
 
 /*************** SINGLE POST ***************/
 .single-post-wrap .post-title {
+  font-size: 1.2rem;
   color: #000;
-  font-size: 27px;
   text-transform: capitalize;
   font-weight: bold; }
 .single-post-wrap section p {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 1rem; }
 .single-post-wrap .comment-notes, .single-post-wrap input, .single-post-wrap .comment-form-field {
   margin: 2.5% 0; }
 .single-post-wrap #comments {
-  margin-top: 2.5%; }
+  margin-top: 2.5%;
+  font-size: 0.9rem; }
 .single-post-wrap .comment-form-field #comment {
   width: 100%;
   height: 100%;
@@ -259,7 +270,6 @@ body {
   position: relative; }
   .single-post-wrap .comment-form-author i.glyphicon, .single-post-wrap .comment-form-email i.glyphicon, .single-post-wrap .comment-form-field i.glyphicon {
     position: absolute;
-    font-size: 24px;
     left: 12px; }
   .single-post-wrap .comment-form-author input, .single-post-wrap .comment-form-author textarea, .single-post-wrap .comment-form-email input, .single-post-wrap .comment-form-email textarea, .single-post-wrap .comment-form-field input, .single-post-wrap .comment-form-field textarea {
     padding-left: 50px;
@@ -285,7 +295,8 @@ body {
   border-top: 2px solid #2cc895; }
 .single-post-wrap .comments-title, .single-post-wrap .comment-reply-title {
   margin: 2.5% 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5rem; }
 .single-post-wrap span.says {
   display: none; }
 .single-post-wrap .comment-body .comment-author {
@@ -305,30 +316,41 @@ body {
   margin-bottom: 2.5%;
   float: right;
   color: #2cc895; }
-.single-post-wrap ol.children .comment-meta {
-  margin-top: -40px; }
 .single-post-wrap ol.comment-list {
   padding: 0; }
 
 /*************** FULL TEAM MEMBERS SECTION ***************/
-.team-page-container {
-  background-color: red; }
-  .team-page-container .members-grid-wrapper .single-member {
-    padding: 10px; }
-    .team-page-container .members-grid-wrapper .single-member img {
-      width: 100%;
-      max-height: 375px;
-      -o-object-fit: contain;
-      object-fit: contain; }
+.team-page-container p {
+  margin-bottom: 15px; }
+.team-page-container .members-grid-wrapper .single-member {
+  padding: 10px; }
+  .team-page-container .members-grid-wrapper .single-member img {
+    width: 100%;
+    max-height: 375px;
+    -o-object-fit: contain;
+    object-fit: contain; }
+.team-page-container .members-grid-wrapper .member-box {
+  color: #000;
+  padding: 15px 0; }
+  .team-page-container .members-grid-wrapper .member-box .member-name {
+    margin-bottom: 5%;
+    font-size: 1.125rem; }
+  .team-page-container .members-grid-wrapper .member-box .member-training {
+    font-size: 0.9rem;
+    color: #2d3435; }
 
 /*************** INDIVIDUAL DOCTOR PAGE ***************/
-.doctors-page-container .doctor-profile-image img {
-  width: 100%; }
+.doctors-page-container figure {
+  background-color: red; }
 .doctors-page-container .doctor-name-header {
-  margin-bottom: 20px; }
+  text-align: center;
+  font-size: 1.68rem;
+  color: #000; }
+.doctors-page-container .doctor-name-header {
+  margin: 20px 0; }
 .doctors-page-container .doctor-bio p {
-  font-size: 1.2em;
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-size: 0.9rem; }
 
 /*************** FOOTER ***************/
 #footer {
@@ -340,17 +362,17 @@ body {
     padding-top: 30px;
     padding-bottom: 30px; }
   #footer .footer-title {
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid grey;
-    font-size: 14px; }
+    border-bottom: 1px solid grey; }
   #footer .footer-nav-col {
     background-color: #2d3435;
     letter-spacing: 0.5px; }
     #footer .footer-nav-col li {
-      margin-bottom: 8px;
-      font-size: 0.9em; }
+      font-size: 0.8rem;
+      margin-bottom: 8px; }
     #footer .footer-nav-col a {
       text-decoration: none; }
   #footer .footer-nav-col:nth-child(1) .sub-menu {
@@ -363,6 +385,7 @@ body {
       content: "- "; }
 
 #sub-footer {
+  font-size: 0.9rem;
   background-color: #404546;
   color: grey;
   padding: 20px 0; }
@@ -376,13 +399,14 @@ body {
   color: #2cc895;
   text-transform: uppercase; }
 .news-page-container .post-excerpt, .news-page-container .post-content, .front-page-news .post-excerpt, .front-page-news .post-content, .single-post-wrap .post-excerpt, .single-post-wrap .post-content {
-  margin: 2.5% 0; }
+  margin: 15px 0; }
 
-.news-page-container .post-title a {
-  color: #000;
-  font-size: 0.9em;
+.news-page-container .post-title {
+  font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: bold; }
+  .news-page-container .post-title a {
+    color: #000; }
 .news-page-container .post-footer {
   margin-bottom: 7.5%;
   width: 100%; }
@@ -403,20 +427,18 @@ body {
       font-weight: bold;
       color: #2cc895;
       border-bottom: 2px solid #2cc895; }
-.news-page-container .posts-pag {
-  font-size: 18px; }
-  .news-page-container .posts-pag a {
-    color: #000; }
-    .news-page-container .posts-pag a.prev.page-numbers:before {
-      content: '<\00a0\00a0\00a0'; }
-    .news-page-container .posts-pag a.next.page-numbers:after {
-      content: '\00a0\00a0\00a0>'; }
-  .news-page-container .posts-pag a.page-numbers {
-    padding: 0 5px; }
-  .news-page-container .posts-pag .current {
-    font-weight: bold;
-    color: #2cc895;
-    border-bottom: 2px solid #2cc895; }
+.news-page-container .posts-pag a {
+  color: #000; }
+  .news-page-container .posts-pag a.prev.page-numbers:before {
+    content: '<\00a0\00a0\00a0'; }
+  .news-page-container .posts-pag a.next.page-numbers:after {
+    content: '\00a0\00a0\00a0>'; }
+.news-page-container .posts-pag a.page-numbers {
+  padding: 0 5px; }
+.news-page-container .posts-pag .current {
+  font-weight: bold;
+  color: #2cc895;
+  border-bottom: 2px solid #2cc895; }
 
 .appointment-page-container .um, .appointment-page-container .um-form {
   margin-left: 50px; }
@@ -437,8 +459,19 @@ body {
 
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 400px) {
+  html {
+    font-size: 14px; }
+
   #carousel {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .content-wrap {
+    padding-top: 7.5%;
+    padding-bottom: 7.5%; }
+
+  .news-page-container .post-footer a:nth-of-type(2) {
+    float: none;
+    display: inline-block; } }
 @media (min-width: 768px) {
   .locations-page-container .map-col iframe {
     height: 450px; } }
@@ -454,51 +487,39 @@ body {
     .navbar .navbar-nav .active a:focus {
       border-bottom: none; }
 
+  .cta-section img {
+    width: 250px; }
+
   .news-section {
     padding: 5%; }
-    .news-section h2 {
-      font-size: 1.5em; }
     .news-section .post-date {
       text-align: center; }
-    .news-section .post-date, .news-section .post-content, .news-section .read-full-post {
-      font-size: 1em; }
 
   .section-member {
     flex: 1 1 46%;
     padding: 5%; }
 
-  .team-section h1 {
-    font-size: 1.4em; }
   .team-section p {
-    font-size: 0.8em;
     padding: 0 10%; }
-  .team-section .member-box .section-member-name {
-    font-size: 1.1em; }
-  .team-section .member-box .section-member-training {
-    font-size: 0.9em; }
 
   .default-page-container .um, .default-page-container .um-form {
     margin-left: 0; }
 
   .footer-nav-col {
-    height: 180px; }
+    height: 180px;
+    margin-bottom: 20px; }
 
   #footer .container {
-    font-size: 0.8em;
     padding-bottom: 0; }
 
   #footer .footer-title {
-    font-size: 0.9em;
     padding-top: 15px; }
-
-  #sub-footer {
-    font-size: 80%; }
 
   .locations-page-container .map-col iframe {
     height: 250px; } }
 @media (max-width: 993px) {
   .services-sidebar-wrap {
-    margin-top: 50px; }
+    margin-top: 25px; }
     .services-sidebar-wrap .services-flex-wrap {
       margin: 20px auto 0; } }
 @media (min-width: 994px) {

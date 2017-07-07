@@ -4,9 +4,8 @@
   background-color: $dark-grey;
   color: #fff;
 
-  a{
+  a {
     color: #fff;
-    
   }
 
   .container {
@@ -15,19 +14,19 @@
   }
 
   .footer-title {
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid grey;
-    font-size: 14px;
   }
 
   .footer-nav-col {
     background-color: $dark-grey;
     letter-spacing: 0.5px;
     li {
+      font-size: 0.8rem;
       margin-bottom: 8px;
-      font-size: 0.9em;
     }
 
     a {
@@ -56,9 +55,6 @@
     }
   }
 
-
-
-
   //Clinic Column
   .footer-nav-col:nth-child(2){
     
@@ -69,11 +65,11 @@
   }
   //Office Column
   .footer-nav-col:nth-child(4) {
-    
   }
 }
 
 #sub-footer {
+  font-size: 0.9rem;
   background-color: #404546;
   color: grey;
   padding: 20px 0;

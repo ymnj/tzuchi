@@ -1,8 +1,10 @@
 /*************** FULL TEAM MEMBERS SECTION ***************/
 
-.team-page-container {
-
-  background-color: red;
+.team-page-container { 
+  
+    p {
+      margin-bottom: 15px;
+    }
 
   .members-grid-wrapper{
     
@@ -14,6 +16,21 @@
         max-height: 375px;
         -o-object-fit: contain;
         object-fit: contain;
+      }
+    }
+
+    .member-box {
+      color: #000;
+      padding: 15px 0;
+
+      .member-name {
+        margin-bottom: 5%;
+        font-size: 1.125rem;
+      }
+
+      .member-training {
+        font-size: 0.9rem;
+        color: $dark-grey;
       }
     }
   }

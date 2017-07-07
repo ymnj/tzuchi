@@ -32,11 +32,10 @@ $dark-grey: #2d3435;
   border: 1px solid black;
 }
 
-
-
 body, html {
 	height: 100vh;
 	width: 100%;
+	font-size: 16px;
 }
 
 body {
@@ -100,8 +99,22 @@ body {
 
 
 @media (max-width: 400px) {
+	html {
+		font-size: 14px;
+	}
+
 	#carousel {
 		margin-bottom: 20px;
+	}
+
+	.content-wrap {
+		padding-top: 7.5%;
+		padding-bottom: 7.5%;
+	}
+
+	.news-page-container .post-footer a:nth-of-type(2) {
+		float: none;
+		display: inline-block;
 	}
 }
 
@@ -112,7 +125,9 @@ body {
 }
 
 @media (max-width: 768px) {
-
+	 // html {
+	 // 	font-size: 14px;
+	 // }
 	.navbar {
 		height: 0;
 		background-color: #fff;
@@ -131,13 +146,26 @@ body {
 		.navbar-nav .active a:focus {
 			border-bottom: none;
 		}
- }
+ 	}
+
+ 	.cta-section {
+ 		img {
+ 			width: 250px;
+ 		}
+ 		p {
+ 			
+ 		
+	 		span {
+	 			
+	 		}
+	 	}
+ 	}
 
 	.news-section {
 		padding: 5%;
 
 		h2 {
-			font-size: 1.5em;
+			
 		}
 
 		.post-date {
@@ -145,7 +173,7 @@ body {
 		}
 
 		.post-date, .post-content, .read-full-post {
-			font-size: 1em;
+			
 		}
 	}
 
@@ -157,21 +185,25 @@ body {
 
 	.team-section {
 
+		.intro-header p{
+		
+		}
+
 		h1 {
-			font-size: 1.4em;
+			
 		}
 
 		p {
-			font-size: 0.8em;
+		
 			padding: 0 10%;
 		}
 
 		.member-box .section-member-name  {
-			font-size: 1.1em;
+			
 		}
 
 		.member-box .section-member-training {
-			font-size: 0.9em;
+		
 		}
 	}
 
@@ -183,21 +215,22 @@ body {
 
 	.footer-nav-col {
 		height: 180px;
+		margin-bottom: 20px;
 	}
 
 	#footer .container {
-		font-size: 0.8em;
+		
 		padding-bottom: 0;
 	}
 
   #footer .footer-title {
-		font-size: 0.9em;
+	
 		padding-top: 15px;
 	}
 
 
 	#sub-footer {
-		font-size: 80%;
+	
 	}
 
 	.locations-page-container .map-col iframe {
@@ -209,7 +242,7 @@ body {
 @media (max-width: 993px) {
 
 	.services-sidebar-wrap {
-		margin-top: 50px;
+		margin-top: 25px;
 		.services-flex-wrap {
 			margin: 20px auto 0;
 		}

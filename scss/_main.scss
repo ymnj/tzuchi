@@ -28,7 +28,6 @@
   border: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
 
   .navbar-nav > .active > a, .navbar-nav > .active > a:hover {
     background-color: transparent;
@@ -97,24 +96,23 @@
 /*************** Appointment CTA ***************/
 
 .cta-section {
-  height: 500px;
+  max-height: 500px;
   background-color: #60AAC3;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   img {
-    width: 400px;
+    max-width: 400px;
     height: auto;
   }
 
   p {
+    font-size: 1.87rem;
     padding-top: 50px;
-    font-size: 30px;
-    letter-spacing: 2px;
     text-transform: capitalize;
     span {
-      font-size: 45px;
+      font-size: 2.8rem;
       font-weight: bold;
       color: #fff;
       border-bottom: 1px solid black;
@@ -127,6 +125,7 @@
 /*************** DEFAULT PAGE ***************/
 
 .default-page-container {
+  font-size: 1rem;
 
   .default-page-title {
     text-align: center;
@@ -141,7 +140,6 @@
 
   h1, .services-sidebar-wrap h1 {
     display: inline;
-    font-size: 2em;
     border-top: 5px solid #3D9970;
     border-bottom: 2px solid #3D9970;
   }
@@ -154,7 +152,18 @@
   padding: 0;
 
   .post-text-wrap {
+    font-size: 1rem;
     padding: 20px 15px;
+  }
+
+  .post-title {
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  p {
+   margin-bottom: 10px;
+   line-height: 21px;
   }
 
   .post-img {
@@ -171,10 +180,10 @@
   }
 
   .read-full-post  {
-    //margin-top: 5%;
     bottom: -7px;
     left: 50%;
     margin-left: -50px;
+    margin-bottom: 0;
     position: absolute;
 
     a {
@@ -223,6 +232,7 @@
     text-transform: uppercase;
 
     h2 {
+      font-size: 1.87rem;
       font-weight: 700;
     }
   }
@@ -236,7 +246,12 @@
 
   .intro-header {
     margin-bottom: 5%;
+
+    h1 {
+      font-size: 2rem;
+    }
     p {
+      font-size: 1rem;
       margin-top: 5%;
     }
   }
@@ -259,23 +274,20 @@
     }
 
     .member-box {
-      background-color: #fff;
       color: #000;
       padding: 15px 0;
 
       .section-member-name, .member-name {
-        font-size: 20px;
         margin-bottom: 5%;
       } 
 
-      .member-name {
-        font-size: 1em;
+      .section-member-name {
+        font-size: 1.125rem;
       }
 
       .section-member-training {
-        font-size: 0.9em;
-        white-space: nowrap;
-        overflow: hidden;
+        font-size: 0.9rem;
+        color: $dark-grey;
       }
     }
     
