@@ -340,15 +340,19 @@ body {
     color: #2d3435; }
 
 /*************** INDIVIDUAL DOCTOR PAGE ***************/
-.doctors-page-container figure {
-  background-color: red; }
 .doctors-page-container .doctor-name-header {
+  margin: 2.5% 0;
   text-align: center;
   font-size: 1.68rem;
   color: #000; }
-.doctors-page-container .doctor-name-header {
-  margin: 20px 0; }
+.doctors-page-container figure {
+  display: flex; }
+.doctors-page-container .doctor-profile-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; }
 .doctors-page-container .doctor-bio p {
+  line-height: 19px;
   margin: 15px 0;
   font-size: 0.9rem; }
 
@@ -385,7 +389,7 @@ body {
       content: "- "; }
 
 #sub-footer {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   background-color: #404546;
   color: grey;
   padding: 20px 0; }

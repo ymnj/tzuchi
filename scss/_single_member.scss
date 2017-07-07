@@ -1,26 +1,26 @@
 /*************** INDIVIDUAL DOCTOR PAGE ***************/
 
 .doctors-page-container {
-  
-  figure {
-    background-color: red;
-  }
 
   .doctor-name-header {
+    margin: 2.5% 0;
     text-align: center;
     font-size: 1.68rem;
     color: #000;
   }
 
-  .doctor-profile-image {
-    
+  figure {
+    display: flex;
   }
 
-  .doctor-name-header {
-    margin: 20px 0;
+  .doctor-profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .doctor-bio p {
+    line-height: 19px;
     margin: 15px 0;
     font-size: 0.9rem;
   }
